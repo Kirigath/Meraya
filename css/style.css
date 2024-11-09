@@ -340,6 +340,13 @@ header.sticky .nav-bar {
   align-items: center;
 }
 
+p{
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  /* Menambahkan properti ini untuk rata kiri kanan */
+}
+
 .section{
   position: relative;
   max-width: 1150px;
@@ -429,6 +436,9 @@ header.sticky .nav-bar {
   font-weight: 600;
   margin-bottom: 10px;
 }
+.about-info .description h3 span{
+  color: var(--second-color);
+}
 
 .about-info .description h4 span {
   color: var(--second-color);
@@ -465,22 +475,22 @@ header.sticky .nav-bar {
   font-size: var(--normal-font-size);
 }
 
-/*=======Skills section=======*/
-.skills .container .content{
+/*=======visi-misi section=======*/
+.visi-misi .container .content{
   width: 100%;
 }
 
-.skills-description{
+.visi-misi-description{
   max-width: 700px;
   margin-bottom: 50px;
 }
 
-.skills-description h3{
+.visi-misi-description h3{
   font-size: 2em;
   margin-bottom: 5px;
 }
 
-.skills-info{
+.visi-misi-info{
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -488,11 +498,11 @@ header.sticky .nav-bar {
   margin: 0 auto;
 }
 
-.skills-info h4{
+.visi-misi-info h4{
   margin-bottom: 20px;
 }
 
-.skills-info h4 label{
+.visi-misi-info h4 label{
   background: var(--second-color);
   color: #fff;
   font-size: var(--normal-font-size);
@@ -501,150 +511,38 @@ header.sticky .nav-bar {
   border-radius: 5px;
 }
 
-.education-all{
-  margin-bottom: 80px;
+
+/*=======guest section=======*/
+.guest .container .content{
+  width: 100%;
 }
 
-.edu-list .item{
-  background: var(--card-bg-color);
-  box-shadow: var(--box-shadow);
-  border-bottom: 3px  solid var(--second-color);
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 6px;
-  transition: .3s ease;
-}
-
-.edu-list .item .year{
-  font-size: var(--small-font-size);
-  margin-bottom: 5px;
-}
-
-.edu-list .item p{
-  color: var(--third-color);
-  font-size: var(--small-font-size);
-}
-
-.edu-list .item p span{
-  color: var(--first-color);
-  font-size: var(--normal-font-size);
-  font-weight: 500;
-}
-
-.bar{
-  background: var(--card-bg-color);
-  box-shadow: var(--box-shadow);
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 6px;
-  transition: .3 ease;
-}
-
-.bar .info{
+/* Centering the guest section */
+.guest .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
-  font-size: var(--small-font-size);
+  flex-direction: column;
 }
 
-.bar .info span{
-  font-weight: 500;
-}
-
-.bar .line{
-  position: relative;
-  width: 100%;
-  height: 7px;
-  background: #c5cadf;
-  border-radius: 2px;
-}
-
-.bar .line:before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: var(--second-color);
-  border-radius: 2px;
-}
-
-.bar .html:before{
-  width: 95%;
-}
-.bar .css:before{
-  width: 80%;
-}
-.bar .javascript:before{
-  width: 50%;
-}
-.bar .mysql:before{
-  width: 80%;
-}
-.bar .php:before{
-  width: 50%;
-}
-
-.experience-card{
-  background: var(--card-bg-color);
-  border-bottom: 3px  solid var(--card-border-color);
-  padding: 35px;
-  border-radius: 6px;
-  box-shadow: var(--box-shadow);
-  transition: .3s ease;
-}
-
-.experience-card .upper{
-  line-height: 30px;
-}
-
-.experience-card h3{
-  font-size: 1.3em;
-  font-weight: 700;
-}
-
-.experience-card h5{
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  font-style: italic;
-}
-
-.experience-card span{
-  color: var(--third-color);
-}
-
-.experience-card .hr{
-  width: 100%;
-  height: 2px;
-  background: var(--line-color);
-  margin: 10px 0 22px;
-}
-
-.edu-list .item:hover, .bar:hover, .experience-card:hover{
-  transform: scale(1.03);
-}
-
-
-/*=======Services section=======*/
-.services .container .content{
-  width: 100%;
-}
-
-.services-description h3{
+.guest-description h3{
   font-size: 2em;
   margin-bottom: 50px;
 }
 
-.service-list{
+.service-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  max-width: 100%;
-  margin: 0 auto;
   gap: 20px;
+  justify-content: center;
+  /* Center the grid */
+  width: 100%;
+  max-width: 800px;
+  /* Optional: limit width for a more balanced look */
+  margin: 0 auto;
 }
 
-.service-card{
+.service-card {
   background: var(--card-bg-color);
   border-bottom: 3px solid var(--second-color);
   padding: 50px;
@@ -739,6 +637,17 @@ header.sticky .nav-bar {
   color: var(--second-color);
 }
 
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the same text color as surrounding text */
+}
+
+/* Optional: If you want to ensure no color change on active, visited, or focus states */
+a:focus, a:active, a:visited {
+  color: inherit; /* Keep the color same */
+  background-color: transparent; /* Ensure background doesn't change */
+}
+
 /*=======Portfolio section=======*/
 .portfolio .container .content {
   width: 100%;
@@ -820,6 +729,10 @@ header.sticky .nav-bar {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   padding: 20px;
+}
+
+.porfolio-model p span{
+  color: var(--second-color);
 }
 
 .porfolio-model.active {
