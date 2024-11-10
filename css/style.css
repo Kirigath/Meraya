@@ -1318,7 +1318,7 @@ footer a{
     }
   
     .home-container .home-img {
-      position: absolute;
+      position: relative;
       transform: translate(50px, -300px);
     }
   
