@@ -1319,12 +1319,13 @@ footer a{
   
     .home-container .home-img {
       position: absolute;
-      transform: translate(0, -300px);
+      transform: translate(0, -150px);
     }
-  
+
     .home-container .home-img img {
-      width: 65%;
-      transform: translate(50px, 0);
+      position: relative;
+      width: 75%;
+      transform: translate(40px, -50px);
     }
   
     .home .home-container .info {
@@ -1366,12 +1367,12 @@ footer a{
     }
   
     .home-container .home-img {
-      position: relative;
-      transform: translate(0, -680px);
+      position: absolute;
+      transform: translate(0, -150px);
     }
   
     .home-container .home-img img {
-      position: absolute;
+      position: relative;
       width: 75%;
     }
   
