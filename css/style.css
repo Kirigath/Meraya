@@ -925,8 +925,7 @@ a:focus, a:active, a:visited {
   width: 100%;
 }
 
-.contact-left,
-.contact-right {
+.contact-left, .contact-right {
   flex: 1 1 45%;
 }
 
@@ -1051,6 +1050,7 @@ iframe {
     font-size: 1.4em;
   }
 }
+
 
 /*=======Footer=======*/
 footer{
@@ -1319,11 +1319,11 @@ footer a{
   
     .home-container .home-img {
       position: absolute;
-      transform: translate(50px, -250px);
     }
   
     .home-container .home-img img {
       width: 65%;
+      transform: translate(50px, -300px);
     }
   
     .home .home-container .info {
@@ -1357,4 +1357,3 @@ footer a{
     font-size: 0.8rem;
   }
 }
-
