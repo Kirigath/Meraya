@@ -1,4 +1,4 @@
 # Meraya
 Website Event Meraya
 
-web : merayaa.fun
+web : www.meraya.fun
