@@ -1313,6 +1313,11 @@ footer a{
   }
 
   /*=======Home section=======*/
+    .home .scroll-down{
+      position: absolute;
+      top: 800PX;
+    }
+
     .home .home-container {
       display: grid;
     }
@@ -1320,10 +1325,6 @@ footer a{
     .home-container .home-img {
       position: absolute;
       transform: translate(50px, -220px);
-    }
-  
-    .home-container .home-img img {
-      width: 65%;
     }
   
     .home .home-container .info {
