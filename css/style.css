@@ -1324,7 +1324,7 @@ footer a{
   .home-container .home-img img {
     position: absolute;
     width: 75%;
-    transform: translate(50px, -780px);
+    transform: translate(50px, -800px);
   }
 
   .home .home-container .info {
