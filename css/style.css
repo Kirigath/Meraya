@@ -1358,3 +1358,37 @@ footer a{
     font-size: 0.8rem;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  /*=======Home section=======*/
+    .home .home-container {
+      display: grid;
+    }
+  
+    .home-container .home-img {
+      position: absolute;
+      transform: translate(0, -300px);
+    }
+  
+    .home-container .home-img img {
+      width: 65%;
+      transform: translate(50px, 0);
+    }
+  
+    .home .home-container .info {
+      font-size: 0.8rem;
+    }
+  
+    .media-icons {
+      margin-bottom: 40px;
+    }
+  
+    .media-icons a {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+  
+    .scroll-down i {
+      font-size: 1.2em;
+    }
+}
