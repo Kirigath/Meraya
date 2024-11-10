@@ -1358,3 +1358,40 @@ footer a{
     font-size: 0.8rem;
   }
 }
+
+
+/* Media Query untuk iPhone dan layar kecil */
+@media only screen and (max-width: 480px) {
+
+  /*=======Home section=======*/
+    .home .home-container {
+      display: grid;
+    }
+  
+    .home-container .home-img {
+      position: relative;
+    }
+  
+    .home-container .home-img img {
+      position: absolute;
+      width: 75%;
+      transform: translate(50px, -500px);
+    }
+  
+    .home .home-container .info {
+      font-size: 0.8rem;
+    }
+  
+    .media-icons {
+      margin-bottom: 40px;
+    }
+  
+    .media-icons a {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+  
+    .scroll-down i {
+      font-size: 1.2em;
+    }
+}
