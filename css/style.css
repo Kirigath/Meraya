@@ -916,17 +916,24 @@ a:focus, a:active, a:visited {
   background: var(--second-color);
 }
 
-/*=======Contact section=======*/
+/* Contact Section */
 .contact .container .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
   width: 100%;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
 }
 
 .contact-left h2 {
   font-size: 2.1em;
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contact-list {
@@ -935,27 +942,24 @@ a:focus, a:active, a:visited {
 }
 
 .contact-list li {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .contact-list h3 {
   font-size: 1.3em;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: var(--first-color);
-  /* Menambahkan warna untuk teks judul */
 }
 
 .contact-list h3 i {
-  color: #ff0066;;
-  /* Pastikan warna ini sudah didefinisikan dengan benar */
+  color: #ff0066;
   font-size: 1.3em;
   margin-right: 10px;
 }
 
 .contact-list span {
   color: var(--third-color);
-  margin-left: 40px;
 }
 
 .contact-list span a {
@@ -966,7 +970,7 @@ a:focus, a:active, a:visited {
 .contact-right p {
   color: var(--third-color);
   font-size: 1.6em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-right p span {
@@ -980,7 +984,7 @@ a:focus, a:active, a:visited {
   color: var(--first-color);
   background: var(--transparent-color-02);
   font-size: var(--normal-font-size);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 15px 20px;
   border-radius: 5px;
   width: 100%;
@@ -990,17 +994,15 @@ a:focus, a:active, a:visited {
   resize: none;
 }
 
-::placeholder {
-  color: var(--first-color);
-}
-
-.contact-form .first-row input {
+.contact-form .first-row,
+.contact-form .second-row,
+.contact-form .third-row {
   width: 100%;
 }
 
 .contact-form .second-row {
   display: flex;
-  justify-content: space-between;
+  gap: 5%;
 }
 
 .contact-form .second-row input {
@@ -1009,11 +1011,9 @@ a:focus, a:active, a:visited {
 
 .contact-form .btn {
   border: none;
-  margin-top: 0;
   border-radius: 5px;
   cursor: pointer;
   background-color: #ff0066;
-  /* Sesuaikan dengan warna yang diinginkan */
   color: #fff;
   padding: 15px 40px;
   font-size: 1em;
@@ -1023,7 +1023,33 @@ a:focus, a:active, a:visited {
 
 .contact-form .btn:hover {
   background-color: #e6005c;
-  /* Warna saat hover */
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 300px;
+  /* Adjust as needed */
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact .container .content {
+    flex-direction: column;
+  }
+
+  .contact-right p {
+    font-size: 1.4em;
+  }
 }
 
 /*=======Footer=======*/
