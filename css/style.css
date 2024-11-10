@@ -1318,8 +1318,8 @@ footer a{
     }
   
     .home-container .home-img {
-      position: relative;
-      transform: translate(50px, -300px);
+      position: absolute;
+      transform: translate(50px, -250px);
     }
   
     .home-container .home-img img {
