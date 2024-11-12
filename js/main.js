@@ -51,18 +51,22 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 });
 
 //Our clients - Swiper
-var swiper = new Swiper(".client-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    },
-    navigation: {
+var swiper = new Swiper(".get-in-touch-swiper", {
+slidesPerView: 1,
+spaceBetween: 20,
+loop: true,
+navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-    },
+},
+pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+},
 });
 
 //Website dark/light theme
