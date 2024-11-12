@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-:root{
+:root {
   /*=======Main theme colors=======*/
   --first-color: #0e2431;
   --second-color: #E02377;
@@ -18,13 +18,13 @@
   --transparent-color-01: rgb(0, 0, 0, 0.1);
   --transparent-color-02: rgb(106, 89, 209, 0.1);
   --line-color: #d7d7d7;
-  
+
   /*=======Color Filter=======*/
   --color-filter: invert(1);
-  
+
   /*=======Box shadow=======*/
-  --box-shadow: 0px 0px 20px  rgba(0 0 0 / 10%);
-  
+  --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+
   /*=======Font size=======*/
   --small-font-size: 0.9em;
   --normal-font-size: 1em;
@@ -57,7 +57,6 @@
     --scroll-thump-hover-color: #454f6b;
 }
 
-
 *{
   margin: 0;
   padding: 0;
@@ -72,7 +71,7 @@ html{
 body{
   color: var(--first-color);
   background-color: var(--body-bg-color);
-  margin: 2rem 0 0 0;
+  margin: 4rem 0 0 0;
   transition: .5s ease;
 }
 
@@ -114,6 +113,7 @@ li{
   top: 100px;
   background: var(--transparent-color-01);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   width: 50px;
   height: 50px;
   font-size: 1.2em;
@@ -153,6 +153,7 @@ header {
   top: 0;
   left: 0;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: 0.6s ease;
 }
 
@@ -352,7 +353,7 @@ p{
   max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  padding: 6rem 2rem 2rem;
+  padding: 2rem 1rem 1rem;
 }
 
 .sub-section{
@@ -360,7 +361,7 @@ p{
   max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .section-title-01{
@@ -585,6 +586,7 @@ p{
   left: 0;
   background: var(--bg-transparent-color);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   visibility: hidden;
   opacity: 0;
   transition: .3s ease;
@@ -809,10 +811,29 @@ a:focus, a:active, a:visited {
 /*=======Get-in-touct=======*/
 .get-in-touch{
   margin-top: 70px;
+  padding: 20px 0;
 }
 
 .get-in-touch .container .content{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kartu Kontak */
+.contact-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background: var(--card-bg-color);
+  box-shadow: var(--box-shadow);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: var(--text-color);
+  /* Warna teks */
 }
 
 .get-in-touch .contact-card{
@@ -828,6 +849,7 @@ a:focus, a:active, a:visited {
 .contact-card .title{
   text-transform: uppercase;
   line-height: 60px;
+  margin-bottom: 20px;
 }
 
 .contact-card .title h4{
@@ -844,11 +866,19 @@ a:focus, a:active, a:visited {
 .contact-card .title h2{
   font-size: 4.2em;
   font-weight: 700;
+  color: var(--second-color);
   background: linear-gradient(to top, transparent 0%, var(--first-color)30%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .9;
 }
+
+/* Flex untuk memastikan konten dalam posisi tengah pada tampilan mobile */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 /*=======Our Clients=======*/
 .our-client .container{
@@ -1324,7 +1354,7 @@ footer a{
   .home-container .home-img img {
     position: absolute;
     width: 75%;
-    transform: translate(50px, -800px);
+    transform: translate(50px, -780px);
   }
 
   .home .home-container .info {
