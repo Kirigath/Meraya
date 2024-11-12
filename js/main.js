@@ -69,6 +69,25 @@ autoplay: {
 },
 });
 
+//Our clients - Swiper
+var swiper = new Swiper(".client-swiper", {
+slidesPerView: 1,
+spaceBetween: 20,
+loop: true,
+navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+},
+});
+
 //Website dark/light theme
 const themeBtn = document.querySelector(".theme-btn");
 
