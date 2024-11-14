@@ -808,13 +808,15 @@ a:focus, a:active, a:visited {
   }
 }
 
-/*=======Get-in-touct=======*/
-.get-in-touch{
+/*======= Get-in-touch Section =======*/
+.get-in-touch {
   margin-top: 70px;
   padding: 20px 0;
+  background-color: var(--background-color);
 }
 
-.get-in-touch .container .content{
+/* Container dan Konten */
+.get-in-touch .container .content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -836,41 +838,55 @@ a:focus, a:active, a:visited {
   /* Warna teks */
 }
 
-.get-in-touch .contact-card{
-  position: relative;
-  width: 90%;
-  background: var(--card-bg-color);
-  box-shadow: var(--box-shadow);
-  padding: 50px;
-  border-radius: 10px;
-  column-gap: 50px;
-}
-
-.contact-card .title{
+/* Judul Kartu */
+.contact-card .title {
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 50px;
   margin-bottom: 20px;
 }
 
-.contact-card .title h4{
-  font-size: 1.2em;
+/* H4 - Subjudul */
+.contact-card .title h4 {
+  font-size: 1.1em;
   font-weight: 300;
-  line-height: 20px;
+  color: #888;
 }
 
-.contact-card .title h3{
-  font-size: 2.3em;
-  font-weight: 400;
+/* H3 - Nama Event */
+.contact-card .title h3 {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
-.contact-card .title h2{
-  font-size: 4.2em;
+/* H2 - Harga/Tarif */
+.contact-card .title h2 {
+  font-size: 3em;
   font-weight: 700;
   color: var(--second-color);
-  background: linear-gradient(to top, transparent 0%, var(--first-color)30%);
+  background: linear-gradient(to top, transparent 0%, var(--second-color) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: .9;
+  opacity: 0.9;
+}
+
+/* Tombol Get In Touch */
+.contact-btn .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: var(--second-color);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+/* Hover pada Tombol */
+.contact-btn .btn:hover {
+  background-color: var(--hover-color);
+  text-decoration: none;
 }
 
 /* Flex untuk memastikan konten dalam posisi tengah pada tampilan mobile */
@@ -878,7 +894,7 @@ a:focus, a:active, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 /*=======Our Clients=======*/
 .our-client .container{
