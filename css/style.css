@@ -1,7 +1,16 @@
+/* Mengimpor Poppins dengan berbagai varian ukuran */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Mengimpor Garet dengan berbagai varian ukuran */
+@import url('https://fonts.googleapis.com/css2?family=Garet:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root {
+/* Mengimpor Bugaki dengan berbagai varian ukuran */
+@import url('https://fonts.googleapis.com/css2?family=Bugaki:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Mengimpor Gliker dengan berbagai varian ukuran */
+@import url('https://fonts.googleapis.com/css2?family=Gliker:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
   /*=======Main theme colors=======*/
   --first-color: #0e2431;
   --second-color: #E02377;
@@ -18,13 +27,13 @@
   --transparent-color-01: rgb(0, 0, 0, 0.1);
   --transparent-color-02: rgb(106, 89, 209, 0.1);
   --line-color: #d7d7d7;
-
+  
   /*=======Color Filter=======*/
   --color-filter: invert(1);
-
+  
   /*=======Box shadow=======*/
-  --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
-
+  --box-shadow: 0px 0px 20px  rgba(0 0 0 / 10%);
+  
   /*=======Font size=======*/
   --small-font-size: 0.9em;
   --normal-font-size: 1em;
@@ -57,11 +66,21 @@
     --scroll-thump-hover-color: #454f6b;
 }
 
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+
+/* Untuk teks body */
+body,p,span,li {
+  font-family: 'Garet', 'Poppins';
+}
+
+/* Untuk headline */
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Bugaki', 'Gliker';
 }
 
 html{
@@ -71,7 +90,7 @@ html{
 body{
   color: var(--first-color);
   background-color: var(--body-bg-color);
-  margin: 4rem 0 0 0;
+  margin: 2rem 0 0 0;
   transition: .5s ease;
 }
 
@@ -82,6 +101,7 @@ a{
 li{
   list-style: none;
 }
+
 /*=======Scroll to top button=======*/
 .scrollToTop-btn{
   z-index: 99999;
@@ -106,13 +126,13 @@ li{
 }
 
 /*=======Light/Dark theme button=======*/
-.theme-btn{
+.theme-btn {
   z-index: 999999;
   position: fixed;
   right: 0;
   top: 100px;
   background: var(--transparent-color-01);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px); 
   -webkit-backdrop-filter: blur(20px);
   width: 50px;
   height: 50px;
@@ -121,6 +141,7 @@ li{
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
+
 
 .theme-btn .fa-sun, .theme-btn.sun .fa-moon{
   display: none;
@@ -353,7 +374,7 @@ p{
   max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 2rem 2rem;
 }
 
 .sub-section{
@@ -536,10 +557,8 @@ p{
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 20px;
   justify-content: center;
-  /* Center the grid */
   width: 100%;
   max-width: 800px;
-  /* Optional: limit width for a more balanced look */
   margin: 0 auto;
 }
 
@@ -731,6 +750,8 @@ a:focus, a:active, a:visited {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .porfolio-model p span{
@@ -896,7 +917,7 @@ a:focus, a:active, a:visited {
   align-items: center;
 }
 
-/*=======Our Clients=======*/
+/*=======Our Crew=======*/
 .our-client .container{
   flex-direction: column;
 }
@@ -915,8 +936,8 @@ a:focus, a:active, a:visited {
 }
 
 .client-img{
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -1284,7 +1305,7 @@ footer a{
     line-height: 50px;
   }
 
-  /*=======Our clients=======*/
+  /*=======Our Crew=======*/
   .client-swiper .swiper-slide{
     flex-direction: column;
   }
