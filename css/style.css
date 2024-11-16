@@ -377,14 +377,6 @@ p{
   padding: 2rem 2rem 2rem;
 }
 
-.sub-section{
-  position: relative;
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem 0;
-}
-
 .section-title-01{
   font-size: 4.5rem;
   font-weight: 800;
@@ -616,10 +608,12 @@ p{
   opacity: 1;
 }
 
-.service-modal-body{
+.service-modal-body {
   position: relative;
   background: var(--modal-bg-color);
   max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
   margin: 20px;
   padding: 40px;
   border-radius: 10px;
@@ -658,6 +652,15 @@ p{
   color: var(--second-color);
 }
 
+/* Styling gambar tamu dalam modal */
+.service-modal-body .guest-photo {
+  display: block;
+  max-width: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 3px solid var(--second-color);
+}
+
 a {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Keep the same text color as surrounding text */
@@ -676,7 +679,7 @@ a:focus, a:active, a:visited {
 
 .portfolio-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 35px;
   margin: 0 auto;
 }
@@ -1190,6 +1193,48 @@ footer a{
   font-size: var(--normal-font-size);
   font-weight: 300;
   margin-top: 50px;
+}
+/* Sponsorship Section */
+.sponsorship {
+  text-align: center;
+}
+
+.sponsorship .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsorship-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sponsor-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*=======Media query max-width 1070px=======*/
