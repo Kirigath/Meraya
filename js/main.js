@@ -4,6 +4,47 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
+
+// Mengatur link navigasi aktif saat di klik atau scroll
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-items a');
+    const sections = document.querySelectorAll('section');
+
+    // Fungsi untuk menghapus class 'active' dari semua link
+    function removeActiveClasses() {
+        navLinks.forEach(link => link.classList.remove('active'));
+    }
+
+    // Fungsi untuk menambahkan class 'active' saat link di klik
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            removeActiveClasses();
+            this.classList.add('active');
+        });
+    });
+
+    // Mengatur link aktif saat di scroll
+    window.addEventListener('scroll', function () {
+        let currentSection = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 70; // Mengurangi tinggi header sticky
+            if (window.scrollY >= sectionTop) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        // Menambahkan class 'active' pada link sesuai section yang sedang aktif
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
+
+
 //Services section - Modal
 const serviceModals = document.querySelectorAll(".service-modal");
 const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
@@ -50,24 +91,25 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
     });
 });
 
-//Our clients - Swiper
+// Get-in-touch Swiper
 var swiper = new Swiper(".get-in-touch-swiper", {
-slidesPerView: 1,
-spaceBetween: 20,
-loop: true,
-navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-},
-pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-},
-autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-},
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 });
+
 
 //Our clients - Swiper
 var swiper = new Swiper(".client-swiper", {
@@ -175,47 +217,27 @@ ScrollReveal({
 
 
 
-// Menangani pengiriman formulir
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Mencegah form untuk dikirim secara default
 
-    // Ambil data form
-    const formData = new FormData(this);
-
-    // Kirim data ke Web3 Forms API atau endpoint lain
-    fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-        // Tampilkan SweetAlert2 setelah pengiriman berhasil
-        Swal.fire({
-            icon: 'success',
-            title: 'Pesan Berhasil Dikirim!',
-            text: 'Terima kasih telah mengirim pesan.',
-            confirmButtonText: 'Tutup'
+    // Kirim data formulir menggunakan EmailJS
+    emailjs.sendForm('service_1tn817s', 'template_90lzohc', this, 'xaXLy7VsKBrRHlAij')
+        .then(function(response) {
+            console.log('Pesan berhasil dikirim:', response);
+            Swal.fire({
+                icon: 'success',
+                title: 'Pesan Berhasil Dikirim!',
+                text: 'Terima kasih telah mengirim pesan.',
+                confirmButtonText: 'Tutup'
+            });
+            document.getElementById("contact-form").reset();
+        }, function(error) {
+            console.error('Error:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal Mengirim Pesan',
+                text: 'Terjadi kesalahan, silakan coba lagi.',
+                confirmButtonText: 'Tutup'
+            });
         });
-
-        // Mengosongkan form setelah pengiriman berhasil
-        document.getElementById("contact-form").reset();
-        } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Gagal Mengirim Pesan',
-            text: 'Terjadi kesalahan, silakan coba lagi.',
-            confirmButtonText: 'Tutup'
-        });
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        Swal.fire({
-        icon: 'error',
-        title: 'Terjadi Kesalahan',
-        text: 'Silakan coba lagi.',
-        confirmButtonText: 'Tutup'
-        });
-    });
 });
