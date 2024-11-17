@@ -75,7 +75,7 @@
 
 /* Untuk teks body */
 body,p,span,li {
-  font-family: 'Garet', 'Poppins';
+  font-family: 'Garet';
 }
 
 /* Untuk headline */
@@ -531,7 +531,6 @@ p{
   width: 100%;
 }
 
-/* Centering the guest section */
 .guest .container {
   display: flex;
   justify-content: center;
@@ -560,6 +559,17 @@ p{
   padding: 50px;
   border-radius: 6px;
   box-shadow: var(--box-shadow);
+}
+
+.service-card img.guest-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.service-card .learn-more-btn {
+  margin-top: 10px;
 }
 
 .service-card > i{
@@ -1194,6 +1204,7 @@ footer a{
   font-weight: 300;
   margin-top: 50px;
 }
+
 /* Sponsorship Section */
 .sponsorship {
   text-align: center;
@@ -1206,12 +1217,94 @@ footer a{
 
 .sponsorship-images {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 20px;
 }
 
-.sponsor-logo img {
+.sponsor-logo.large img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.sponsor-logo.medium img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 100px;
+}
+
+/* Responsif */
+@media screen and (max-width: 1024px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .sponsor-logo.large img {
+    width: 180px;
+  }
+
+  .sponsor-logo.medium img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .sponsor-logo.large img {
+    width: 150px;
+  }
+
+  .sponsor-logo.medium img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsorship-images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .sponsor-logo.large img {
+    width: 120px;
+  }
+
+  .sponsor-logo.medium img {
+    width: 60px;
+  }
+}
+
+/* Media Partner Section */
+.media-partner {
+  text-align: center;
+}
+
+.media-partner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.media-partner-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Menggunakan 5 kolom */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.partner-logo img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -1220,20 +1313,23 @@ footer a{
 }
 
 @media screen and (max-width: 1024px) {
-  .sponsorship-images {
-    grid-template-columns: repeat(4, 1fr);
+  .media-partner-images {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom untuk layar lebih kecil */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .sponsorship-images {
-    grid-template-columns: repeat(4, 1fr);
+  .media-partner-images {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 kolom untuk tablet */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .sponsorship-images {
-    grid-template-columns: repeat(3, 1fr);
+  .media-partner-images {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 kolom untuk layar ponsel */
   }
 }
 
