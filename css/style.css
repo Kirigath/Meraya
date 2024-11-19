@@ -10,7 +10,7 @@
 /* Mengimpor Gliker dengan berbagai varian ukuran */
 @import url('https://fonts.googleapis.com/css2?family=Gliker:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root{
+:root {
   /*=======Main theme colors=======*/
   --first-color: #0e2431;
   --second-color: #E02377;
@@ -27,13 +27,13 @@
   --transparent-color-01: rgb(0, 0, 0, 0.1);
   --transparent-color-02: rgb(106, 89, 209, 0.1);
   --line-color: #d7d7d7;
-  
+
   /*=======Color Filter=======*/
   --color-filter: invert(1);
-  
+
   /*=======Box shadow=======*/
-  --box-shadow: 0px 0px 20px  rgba(0 0 0 / 10%);
-  
+  --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+
   /*=======Font size=======*/
   --small-font-size: 0.9em;
   --normal-font-size: 1em;
@@ -43,27 +43,28 @@
   --scroll-thump-color: #70768a;
   --scroll-thump-hover-color: #454f6b;
 }
-.dark-theme{
+
+.dark-theme {
   /*=======Main theme colors=======*/
-    --first-color: #fff;
-    --second-color: #E02377;
-    --third-color: #a9afc3;
-  
-    /*=======Background colors=======*/
-    --body-bg-color: #0e1b31;
-    --card-bg-color: #132347;
-    --modal-bg-color: #102048;
-    --bg-transparent-color: rgb(255, 255, 255, 0.1);
-    --transparent-color-2551: rgb(255, 255, 255, 0.1);
-    --line-color: #454f6b;
-  
-    /*=======Color Filter=======*/
-    --color-filter: invert(0);
-  
-    /*=======Scroll bar colors=======*/
-    --scroll-bar-color: #c1ceff;
-    --scroll-thump-color: #282f4e;
-    --scroll-thump-hover-color: #454f6b;
+  --first-color: #fff;
+  --second-color: #E02377;
+  --third-color: #a9afc3;
+
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgb(255, 255, 255, 0.1);
+  --transparent-color-2551: rgb(255, 255, 255, 0.1);
+  --line-color: #454f6b;
+
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c1ceff;
+  --scroll-thump-color: #282f4e;
+  --scroll-thump-hover-color: #454f6b;
 }
 
 
@@ -83,27 +84,27 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Bugaki', 'Gliker';
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   color: var(--first-color);
   background-color: var(--body-bg-color);
   margin: 2rem 0 0 0;
   transition: .5s ease;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
 /*=======Scroll to top button=======*/
-.scrollToTop-btn{
+.scrollToTop-btn {
   z-index: 99999;
   position: fixed;
   right: 0;
@@ -119,7 +120,7 @@ li{
   transition: .5s ease;
 }
 
-.scrollToTop-btn.active{
+.scrollToTop-btn.active {
   right: 20px;
   pointer-events: all;
   opacity: 1;
@@ -132,7 +133,7 @@ li{
   right: 0;
   top: 100px;
   background: var(--transparent-color-01);
-  backdrop-filter: blur(20px); 
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   width: 50px;
   height: 50px;
@@ -143,26 +144,27 @@ li{
 }
 
 
-.theme-btn .fa-sun, .theme-btn.sun .fa-moon{
+.theme-btn .fa-sun,
+.theme-btn.sun .fa-moon {
   display: none;
 }
 
-.theme-btn.sun .fa-sun{
+.theme-btn.sun .fa-sun {
   display: block;
 }
 
 /*=======Scroll bar=======*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   background: var(--scroll-bar-color);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--scroll-thump-color);
   border-radius: 2em;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: var(--scroll-thump-hover-color);
 }
 
@@ -205,11 +207,9 @@ header.sticky .nav-bar {
   align-items: center;
   gap: 15px;
 }
-  /* Jarak antar logo */
 
 .logo-img {
   height: 60px;
-  /* Tinggi default logo */
   width: auto;
   transition: height 0.3s ease;
 }
@@ -232,7 +232,7 @@ header.sticky .nav-bar {
   color: var(--second-color);
 }
 
-.nav-menu-btn{
+.nav-menu-btn {
   display: none;
 }
 
@@ -240,19 +240,17 @@ header.sticky .nav-bar {
 @media (max-width: 768px) {
   .logo-img {
     height: 50px;
-    /* Ukuran logo pada perangkat tablet */
   }
 }
 
 @media (max-width: 480px) {
   .logo-img {
     height: 40px;
-    /* Ukuran logo pada perangkat ponsel */
   }
 }
 
 /*=======Home section=======*/
-.home{
+.home {
   position: relative;
   max-width: 1250px;
   min-height: 100vh;
@@ -262,53 +260,53 @@ header.sticky .nav-bar {
   flex-direction: column;
 }
 
-.home .home-container{
+.home .home-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.home-container .media-icons{
+.home-container .media-icons {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
 }
 
-.home-container .media-icons a{
+.home-container .media-icons a {
   color: var(--second-color);
   font-size: 1.5em;
   margin: 10px 0;
 }
 
-.home-container .media-icons a:hover{
+.home-container .media-icons a:hover {
   color: var(--hover-color);
 }
 
-.home-container .info h2{
+.home-container .info h2 {
   font-size: 4em;
   font-weight: 600;
   line-height: 70px;
 }
 
-.home-container .info h2 span{
+.home-container .info h2 span {
   color: var(--second-color);
 }
 
-.home-container .info h3{
+.home-container .info h3 {
   color: var(--third-color);
   font-feature-settings: 1.3em;
   font-weight: 600;
   line-height: 50px;
 }
 
-.home-container .info p{
+.home-container .info p {
   color: var(--third-color);
   font-size: var(--normal-font-size);
   max-width: 520px;
 }
 
-.btn{
+.btn {
   background: var(--second-color);
   color: #fff;
   font-size: var(--normal-font-size);
@@ -320,56 +318,56 @@ header.sticky .nav-bar {
   border-radius: 10px;
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--hover-color);
 }
 
-.home-container .home-img{
+.home-container .home-img {
   position: relative;
 }
 
-.home-container .home-img img{
+.home-container .home-img img {
   width: 90%;
-  transform: translate(0, 0);
+  transform: translate(100px, 0);
 }
 
-.home .scroll-down{
+.home .scroll-down {
   color: var(--first-color);
   font-size: var(--normal-font-size);
   font-weight: 500;
   margin-top: 20px;
 }
 
-.home .scroll-down i{
+.home .scroll-down i {
   color: var(--second-color);
   font-size: 1.2em;
   animation: arrow-down ease 2s infinite;
 }
 
-@keyframes arrow-down{
-  0%{
+@keyframes arrow-down {
+  0% {
     transform: translateY(0);
   }
-  30%{
+
+  30% {
     transform: translateY(10px);
   }
 }
 
 /*=======Common styles for all sections=======*/
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-p{
+p {
   font-size: 1em;
   line-height: 1.6;
   text-align: justify;
-  /* Menambahkan properti ini untuk rata kiri kanan */
 }
 
-.section{
+.section {
   position: relative;
   max-width: 1150px;
   margin-left: auto;
@@ -377,7 +375,7 @@ p{
   padding: 2rem 2rem 2rem;
 }
 
-.section-title-01{
+.section-title-01 {
   font-size: 4.5rem;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -387,13 +385,13 @@ p{
   opacity: .1;
 }
 
-.section-title-02{
+.section-title-02 {
   font-size: 2.5em;
   font-weight: 700;
   transform: translateY(-80px);
 }
 
-.section-title-02:before{
+.section-title-02:before {
   content: '';
   position: absolute;
   width: 70px;
@@ -403,7 +401,7 @@ p{
   background: var(--second-color);
 }
 
-.container{
+.container {
   position: relative;
   flex-direction: column;
 }
@@ -420,12 +418,10 @@ p{
   position: relative;
   flex: 1;
   max-width: 500px;
-  /* Maksimum lebar gambar */
 }
 
 .about-img img {
   width: 100%;
-  /* Mengisi area yang disediakan */
   height: auto;
   border-radius: 10px;
 }
@@ -450,7 +446,8 @@ p{
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about-info .description h3 span{
+
+.about-info .description h3 span {
   color: var(--second-color);
 }
 
@@ -471,7 +468,7 @@ p{
   column-gap: 30px;
 }
 
-.about-info .professional-list .list-item{
+.about-info .professional-list .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,21 +487,21 @@ p{
 }
 
 /*=======visi-misi section=======*/
-.visi-misi .container .content{
+.visi-misi .container .content {
   width: 100%;
 }
 
-.visi-misi-description{
+.visi-misi-description {
   max-width: 700px;
   margin-bottom: 50px;
 }
 
-.visi-misi-description h3{
+.visi-misi-description h3 {
   font-size: 2em;
   margin-bottom: 5px;
 }
 
-.visi-misi-info{
+.visi-misi-info {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -512,11 +509,11 @@ p{
   margin: 0 auto;
 }
 
-.visi-misi-info h4{
+.visi-misi-info h4 {
   margin-bottom: 20px;
 }
 
-.visi-misi-info h4 label{
+.visi-misi-info h4 label {
   background: var(--second-color);
   color: #fff;
   font-size: var(--normal-font-size);
@@ -527,7 +524,7 @@ p{
 
 
 /*=======guest section=======*/
-.guest .container .content{
+.guest .container .content {
   width: 100%;
 }
 
@@ -538,7 +535,7 @@ p{
   flex-direction: column;
 }
 
-.guest-description h3{
+.guest-description h3 {
   font-size: 2em;
   margin-bottom: 50px;
 }
@@ -572,33 +569,34 @@ p{
   margin-top: 10px;
 }
 
-.service-card > i{
+.service-card>i {
   color: var(--second-color);
   font-size: 3em;
   margin-bottom: 30px;
 }
 
-.service-card h3{
+.service-card h3 {
   font-size: 1.5em;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 20px;
 }
 
-.service-card .learn-more-btn{
+.service-card .learn-more-btn {
   color: var(--third-color);
   cursor: pointer;
   transition: .3s ease;
 }
-.service-card .learn-more-btn i{
+
+.service-card .learn-more-btn i {
   transition: .3s ease;
 }
 
-.service-card:hover .learn-more-btn i{
+.service-card:hover .learn-more-btn i {
   transform: translateX(10px);
 }
 
-.service-modal{
+.service-modal {
   z-index: 999999;
   position: fixed;
   width: 100%;
@@ -613,7 +611,7 @@ p{
   transition: .3s ease;
 }
 
-.service-modal.active{
+.service-modal.active {
   visibility: visible;
   opacity: 1;
 }
@@ -632,11 +630,11 @@ p{
   transition: .5s ease;
 }
 
-.service-modal.active .service-modal-body{
+.service-modal.active .service-modal-body {
   transform: translateY(0);
 }
 
-.service-modal-body .modal-close-btn{
+.service-modal-body .modal-close-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -644,25 +642,24 @@ p{
   cursor: pointer;
 }
 
-.service-modal-body h3{
+.service-modal-body h3 {
   font-size: 2em;
 }
 
-.service-modal-body h4{
+.service-modal-body h4 {
   font-size: 1.3em;
   font-weight: 600;
   margin: 15px 0 10px;
 }
 
-.service-modal-body ul li{
+.service-modal-body ul li {
   margin-top: 15px;
 }
 
-.service-modal-body ul li i{
+.service-modal-body ul li i {
   color: var(--second-color);
 }
 
-/* Styling gambar tamu dalam modal */
 .service-modal-body .guest-photo {
   display: block;
   max-width: 150px;
@@ -672,14 +669,13 @@ p{
 }
 
 a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Keep the same text color as surrounding text */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Optional: If you want to ensure no color change on active, visited, or focus states */
 a:focus, a:active, a:visited {
-  color: inherit; /* Keep the color same */
-  background-color: transparent; /* Ensure background doesn't change */
+  color: inherit;
+  background-color: transparent;
 }
 
 /*=======Portfolio section=======*/
@@ -767,7 +763,7 @@ a:focus, a:active, a:visited {
   -webkit-backdrop-filter: blur(10px);
 }
 
-.porfolio-model p span{
+.porfolio-model p span {
   color: var(--second-color);
 }
 
@@ -822,7 +818,7 @@ a:focus, a:active, a:visited {
   }
 
   .portfolio-list .img-card {
-    height: 300px; /* Ukuran yang lebih kecil di perangkat mobile */
+    height: 300px;
   }
 
   .portfolio-model-body {
@@ -849,7 +845,6 @@ a:focus, a:active, a:visited {
   background-color: var(--background-color);
 }
 
-/* Container dan Konten */
 .get-in-touch .container .content {
   width: 100%;
   display: flex;
@@ -857,7 +852,6 @@ a:focus, a:active, a:visited {
   align-items: center;
 }
 
-/* Kartu Kontak */
 .contact-card {
   position: relative;
   width: 100%;
@@ -869,31 +863,26 @@ a:focus, a:active, a:visited {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: var(--text-color);
-  /* Warna teks */
 }
 
-/* Judul Kartu */
 .contact-card .title {
   text-transform: uppercase;
   line-height: 50px;
   margin-bottom: 20px;
 }
 
-/* H4 - Subjudul */
 .contact-card .title h4 {
   font-size: 1.1em;
   font-weight: 300;
   color: #888;
 }
 
-/* H3 - Nama Event */
 .contact-card .title h3 {
   font-size: 2em;
   font-weight: 500;
   color: var(--text-color);
 }
 
-/* H2 - Harga/Tarif */
 .contact-card .title h2 {
   font-size: 3em;
   font-weight: 700;
@@ -904,7 +893,6 @@ a:focus, a:active, a:visited {
   opacity: 0.9;
 }
 
-/* Tombol Get In Touch */
 .contact-btn .btn {
   display: inline-block;
   padding: 10px 25px;
@@ -917,13 +905,11 @@ a:focus, a:active, a:visited {
   transition: background-color 0.3s;
 }
 
-/* Hover pada Tombol */
 .contact-btn .btn:hover {
   background-color: var(--hover-color);
   text-decoration: none;
 }
 
-/* Flex untuk memastikan konten dalam posisi tengah pada tampilan mobile */
 .flex-center {
   display: flex;
   justify-content: center;
@@ -931,41 +917,41 @@ a:focus, a:active, a:visited {
 }
 
 /*=======Our Crew=======*/
-.our-client .container{
+.our-client .container {
   flex-direction: column;
 }
 
-.our-client .container .content{
+.our-client .container .content {
   width: 100%;
 }
 
-.client-swiper .swiper-wrapper{
+.client-swiper .swiper-wrapper {
   margin-bottom: 30px;
 }
 
-.client-swiper .swiper-slide{
+.client-swiper .swiper-slide {
   gap: 50px;
   margin: 20px 0;
 }
 
-.client-img{
+.client-img {
   width: 300px;
   height: 300px;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.client-img img{
+.client-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.client-details{
+.client-details {
   max-width: 500px;
 }
 
-.client-details p{
+.client-details p {
   font-size: 1.2em;
   color: var(--third-color);
   padding-bottom: 15px;
@@ -973,26 +959,29 @@ a:focus, a:active, a:visited {
   border-bottom: 2px solid var(--line-color);
 }
 
-.client-details h3{
+.client-details h3 {
   color: var(--first-color);
   font-size: 1.5em;
 }
 
-.client-details span{
+.client-details span {
   color: var(--third-color);
   font-size: 1.1em;
 }
 
-.swiper-button-next:after,  .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
   content: '';
 }
 
-.swiper-button-next i, .swiper-button-prev i {
+.swiper-button-next i,
+.swiper-button-prev i {
   color: var(--second-color);
   font-size: 3em;
 }
 
-.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
   background: var(--second-color);
 }
 
@@ -1005,7 +994,8 @@ a:focus, a:active, a:visited {
   width: 100%;
 }
 
-.contact-left, .contact-right {
+.contact-left,
+.contact-right {
   flex: 1 1 45%;
 }
 
@@ -1133,7 +1123,7 @@ iframe {
 
 
 /*=======Footer=======*/
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1145,18 +1135,18 @@ footer{
   color: #fff;
 }
 
-footer a{
+footer a {
   color: #fff;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1150px;
 }
 
-.footer-container .about h2{
+.footer-container .about h2 {
   font-size: 3em;
   font-weight: 600;
   background: linear-gradient(to top, transparent 0%, #fff 50%);
@@ -1165,41 +1155,41 @@ footer a{
   opacity: .8;
 }
 
-.footer-container .about p{
+.footer-container .about p {
   font-size: var(--normal-font-size);
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 .footer-container .info,
-.footer-container .follow{
+.footer-container .follow {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .footer-container .info h3,
-.footer-container .follow h3{
+.footer-container .follow h3 {
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 .footer-container .info ul,
-.footer-container .follow ul{
+.footer-container .follow ul {
   display: flex;
 }
 
-.footer-container .info a{
+.footer-container .info a {
   margin: 20px;
 }
 
-.footer-container .follow a{
+.footer-container .follow a {
   font-size: 1.5em;
   margin: 20px;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   font-size: var(--normal-font-size);
   font-weight: 300;
   margin-top: 50px;
@@ -1297,46 +1287,68 @@ footer a{
 }
 
 .media-partner-images {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  /* Menggunakan 5 kolom */
-  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .partner-logo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
+  width: 250px;
+  max-height: 60px;
+  object-fit: contain;
 }
 
+/* Styling khusus untuk logo HIMA */
+.hima-logo img {
+  width: 150px;
+  /* Ukuran lebih besar untuk logo HIMA */
+  max-height: 50px;
+  object-fit: contain;
+}
+
+
+/* Responsif */
 @media screen and (max-width: 1024px) {
   .media-partner-images {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 kolom untuk layar lebih kecil */
+    flex-wrap: wrap;
+  }
+
+  .partner-logo img {
+    width: 100px;
+  }
+
+  .hima-logo img {
+    width: 120px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .media-partner-images {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 kolom untuk tablet */
+  .partner-logo img {
+    width: 80px;
+  }
+
+  .hima-logo img {
+    width: 100px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .media-partner-images {
-    grid-template-columns: repeat(1, 1fr);
-    /* 1 kolom untuk layar ponsel */
+  .partner-logo img {
+    width: 70px;
+  }
+
+  .hima-logo img {
+    width: 90px;
   }
 }
 
 /*=======Media query max-width 1070px=======*/
-@media screen and (max-width: 1070px){
+@media screen and (max-width: 1070px) {
+
   /*=======Header navigation menu=======*/
-  .navigation{
+  .navigation {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -1351,12 +1363,12 @@ footer a{
     transition: .3s ease;
   }
 
-  .navigation.active{
+  .navigation.active {
     visibility: visible;
     opacity: 1;
   }
 
-  .nav-items{
+  .nav-items {
     position: relative;
     background: var(--modal-bg-color);
     width: 600px;
@@ -1372,15 +1384,15 @@ footer a{
     transition: .3s ease;
   }
 
-  .navigation.active .nav-items{
+  .navigation.active .nav-items {
     transform: translateY(0);
   }
 
-  .nav-items a{
+  .nav-items a {
     margin: 15px 50px;
   }
 
-  .nav-close-btn{
+  .nav-close-btn {
     position: absolute;
     background: url(../images/close-btn.png)no-repeat;
     filter: var(--color-filter);
@@ -1394,7 +1406,7 @@ footer a{
     cursor: pointer;
   }
 
-  .nav-menu-btn{
+  .nav-menu-btn {
     background: url(../images/menu-btn.png) no-repeat;
     filter: var(--color-filter);
     background-size: 30px;
@@ -1406,79 +1418,80 @@ footer a{
   }
 
   /*=======Home section=======*/
-  .home .home-container .info{
+  .home .home-container .info {
     font-size: 0.85rem;
   }
 
   /*=======About section=======*/
-  .about .container .content{
+  .about .container .content {
     display: grid;
     width: 100%;
     row-gap: 20px;
   }
 
-  .about-img img{
+  .about-img img {
     min-width: 0;
     width: 100%;
   }
 
-  .about-info{
+  .about-info {
     min-width: 0;
     width: 100%;
   }
 
-  .about-info .professional-list{
+  .about-info .professional-list {
     flex-direction: column;
   }
 
-  .about-info .professional-list .list-item{
+  .about-info .professional-list .list-item {
     justify-content: start;
   }
 
   /*=======Get-in-touct=======*/
-  .get-in-touch .contact-card{
+  .get-in-touch .contact-card {
     display: grid;
     width: 100%;
   }
 
-  .contact-card .title{
+  .contact-card .title {
     font-size: 0.8rem;
     line-height: 50px;
   }
 
   /*=======Our Crew=======*/
-  .client-swiper .swiper-slide{
+  .client-swiper .swiper-slide {
     flex-direction: column;
   }
 
-  .client-details{
+  .client-details {
     text-align: center;
   }
 
   /*=======Contact section=======*/
-  .contact .content{
+  .contact .content {
     flex-direction: column;
     font-size: 0.9rem;
   }
 
-  .contact .contact-left{
+  .contact .contact-left {
     margin-bottom: 40px;
   }
 
-  .contact-form .second-row{
+  .contact-form .second-row {
     flex-direction: column;
   }
 
-  .contact-form .second-row input{
+  .contact-form .second-row input {
     width: 100%;
   }
 
   /*=======Footer=======*/
-  footer .footer-container{
+  footer .footer-container {
     flex-direction: column;
   }
 
-  .footer-container .about, .footer-container .info{
+  .footer-container .about,
+  .footer-container .info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1486,16 +1499,16 @@ footer a{
     margin-bottom: 50px;
   }
 
-  .footer-container .info ul{
+  .footer-container .info ul {
     align-items: center;
     flex-direction: column;
   }
 
-  .footer-container .info ul li{
+  .footer-container .info ul li {
     margin: 5px 0;
   }
 
-  .footer-container .hr{
+  .footer-container .hr {
     width: 100%;
     height: 2px;
     background: rgb(255, 255, 255, 0.1);
@@ -1505,17 +1518,18 @@ footer a{
 }
 
 /*=======Media query max-width 730px=======*/
-@media screen and (max-width: 730px){
+@media screen and (max-width: 730px) {
+
   /*=======Common styles for all sections=======*/
-  body{
+  body {
     margin: 5rem 0 0 0;
   }
 
-  .section-title-01{
+  .section-title-01 {
     font-size: 3em;
   }
 
-  .section-title-02{
+  .section-title-02 {
     font-size: 2em;
     transform: translateY(-65px);
   }
@@ -1553,16 +1567,16 @@ footer a{
   }
 
   /*=======Get-in-touch section=======*/
-  .get-in-touch .contact-card{
+  .get-in-touch .contact-card {
     display: grid;
   }
 
-  .contact-card .title{
+  .contact-card .title {
     font-size: 0.6em;
     line-height: 40px;
   }
 
-  .contact-card .contact-btn .btn{
+  .contact-card .contact-btn .btn {
     font-size: 0.8rem;
   }
 }
@@ -1601,7 +1615,7 @@ footer a{
 
   .scroll-down i {
     font-size: 1.2em;
-    }
+  }
 }
 
 /* Media Query untuk iPhone dan layar kecil */
@@ -1638,7 +1652,7 @@ footer a{
 
   .scroll-down i {
     font-size: 1.2em;
-    }
+  }
 }
 
 @media only screen and (max-width: 380px) {
