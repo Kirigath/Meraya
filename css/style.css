@@ -67,10 +67,15 @@
   --scroll-thump-hover-color: #454f6b;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 /* Untuk teks body */
-body, p, span, li {
+p, span{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -84,6 +89,7 @@ html {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   color: var(--first-color);
   background-color: var(--body-bg-color);
   margin: 2rem 0 0 0;
@@ -95,6 +101,7 @@ a {
 }
 
 li {
+  font-family: 'Poppins', sans-serif;
   list-style: none;
 }
 
