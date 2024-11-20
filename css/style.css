@@ -71,17 +71,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-/* Untuk teks body */
-p, span{
   font-family: 'Poppins', sans-serif;
-}
-
-/* Untuk headline */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bugaki', serif;
 }
 
 html {
@@ -89,7 +79,6 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   color: var(--first-color);
   background-color: var(--body-bg-color);
   margin: 2rem 0 0 0;
@@ -101,7 +90,6 @@ a {
 }
 
 li {
-  font-family: 'Poppins', sans-serif;
   list-style: none;
 }
 
