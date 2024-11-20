@@ -72,16 +72,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Untuk teks body */
-body,p,span,li {
-  font-family: 'Garet', Arial, sans-serif;
-}
-
-/* Untuk headline */
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Gliker', Georgia, serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
