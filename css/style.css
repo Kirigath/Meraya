@@ -296,6 +296,19 @@ header.sticky .nav-bar {
   max-width: 520px;
 }
 
+.btn-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.home-container .home-img img {
+  max-width: 500px;
+  transform: translate(0, 0);
+  margin: 0 auto;
+}
+
 .btn {
   background: var(--second-color);
   color: #fff;
@@ -306,19 +319,37 @@ header.sticky .nav-bar {
   padding: 20px 30px;
   letter-spacing: 1px;
   border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.btn:link,
+.btn:visited {
+  background: var(--second-color);
+  /* Warna tombol */
+  color: #fff;
+  /* Warna teks */
+  text-decoration: none;
+  /* Hilangkan underline */
 }
 
 .btn:hover {
   background: var(--hover-color);
+  /* Warna saat hover */
+}
+
+.btn:active,
+.btn:focus {
+  /* Warna teks */
+  outline: none;
+  /* Hilangkan garis fokus */
+  text-decoration: none;
+  /* Pastikan tidak ada underline */
 }
 
 .home-container .home-img {
   position: relative;
-}
-
-.home-container .home-img img {
-  width: 90%;
-  transform: translate(100px, 0);
 }
 
 .home .scroll-down {
@@ -341,6 +372,100 @@ header.sticky .nav-bar {
 
   30% {
     transform: translateY(10px);
+  }
+}
+
+
+
+/* Untuk layar sangat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    /* Tombol tetap kiri dan kanan */
+    gap: 10px;
+    /* Space antar tombol lebih kecil */
+    width: 100%;
+    margin-top: 20px;
+    /* Jarak atas tombol tetap ada */
+  }
+
+  .btn-container .btn {
+    font-size: 0.9rem;
+    /* Ukuran font lebih kecil */
+    padding: 12px 18px;
+    /* Padding lebih kecil */
+    flex: 1;
+    /* Tombol mengisi ruang dengan proporsional */
+  }
+}
+
+/* Untuk layar kecil (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    /* Tombol tetap kiri dan kanan */
+    gap: 12px;
+    /* Space antar tombol sedikit lebih besar */
+    width: 100%;
+    margin-top: 20px;
+    /* Jarak atas tombol tetap ada */
+  }
+
+  .btn-container .btn {
+    font-size: 0.95rem;
+    /* Ukuran font sedikit lebih kecil */
+    padding: 14px 22px;
+    /* Padding sedikit lebih kecil */
+    flex: 1;
+    /* Tombol mengisi ruang dengan proporsional */
+  }
+}
+
+/* Untuk layar sedang (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    /* Tombol tetap kiri dan kanan */
+    gap: 15px;
+    /* Space antar tombol default */
+    width: 100%;
+    margin-top: 20px;
+    /* Jarak atas tombol tetap ada */
+  }
+
+  .btn-container .btn {
+    font-size: 1rem;
+    /* Ukuran font default */
+    padding: 15px 25px;
+    /* Padding default lebih besar */
+    flex: 1;
+    /* Tombol mengisi ruang dengan proporsional */
+  }
+}
+
+/* Untuk layar lebih besar (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    /* Tombol tetap kiri dan kanan */
+    gap: 20px;
+    /* Space antar tombol lebih besar */
+    width: 100%;
+    margin-top: 20px;
+    /* Jarak atas tombol tetap ada */
+  }
+
+  .btn-container .btn {
+    font-size: 1rem;
+    /* Ukuran font default */
+    padding: 15px 25px;
+    /* Padding default */
+    flex: 1;
+    /* Tombol mengisi ruang dengan proporsional */
   }
 }
 
@@ -663,7 +788,9 @@ a {
   color: inherit;
 }
 
-a:focus, a:active, a:visited {
+a:focus,
+a:active,
+a:visited {
   color: inherit;
   background-color: transparent;
 }
