@@ -1,896 +1,931 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meraya</title>
-  
-    <!-- Menambahkan Favicon -->
-    <link rel="icon" href="images/Logo-Meraya.png" type="image/x-icon">
-  
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meraya</title>
 
-    <!--=======Scroll to top button=======-->
-    <div class="scrollToTop-btn flex-center">
-      <i class="fas fa-arrow-up"></i>
+  <!-- Menambahkan Favicon -->
+  <link rel="icon" href="images/Logo-Meraya.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
+</head>
+
+<body>
+
+  <!--=======Scroll to top button=======-->
+  <div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!--=======Light/Dark theme button=======-->
+  <div class="theme-btn flex-center">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!--=======Header=======-->
+  <header>
+    <div class="nav-bar">
+      <a href="#home" class="logo" aria-label="Logo Mercu, Karsa, Meraya">
+        <img src="images/logo-mercu.png" alt="Logo Mercu" class="logo-img">
+        <img src="images/Logo-Karsa.PNG" alt="Logo Karsa" class="logo-img">
+        <img src="images/Logo-Meraya.png" alt="Logo Meraya" class="logo-img">
+      </a>
+      <div class="navigation">
+        <div class="nav-items">
+          <div class="nav-close-btn"></div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#guest">Guest</a>
+          <a href="#activities">Activities</a>
+          <a href="#registration">Registration</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="nav-menu-btn"></div>
     </div>
+  </header>
 
-    <!--=======Light/Dark theme button=======-->
-    <div class="theme-btn flex-center">
-      <i class="fas fa-sun"></i>
-      <i class="fas fa-moon"></i>
-    </div>
-
-    <!--=======Header=======-->
-    <header>
-      <div class="nav-bar">
-        <a href="#home" class="logo" aria-label="Logo Mercu, Karsa, Meraya">
-          <img src="images/logo-mercu.png" alt="Logo Mercu" class="logo-img">
-          <img src="images/Logo-Karsa.PNG" alt="Logo Karsa" class="logo-img">
-          <img src="images/Logo-Meraya.png" alt="Logo Meraya" class="logo-img">
+  <!--=======Home=======-->
+  <section class="home flex-center" id="home">
+    <div class="home-container">
+      <div class="media-icons">
+        <a href="https://www.instagram.com/merayamarket" target="_blank" rel="noopener"
+          aria-label="Visit Meraya Market on Instagram">
+          <i class="fab fa-instagram"></i>
         </a>
-        <div class="navigation">
-          <div class="nav-items">
-            <div class="nav-close-btn"></div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#guest">Guest</a>
-            <a href="#activities">Activities</a>
-            <a href="#registration">Registration</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-        <div class="nav-menu-btn"></div>
+        <a href="https://www.tiktok.com/@merayamarket" target="_blank" rel="noopener"
+          aria-label="Visit Meraya Market on TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
       </div>
-    </header>
-
-    <!--=======Home=======-->
-    <section class="home flex-center" id="home">
-      <div class="home-container">
-        <div class="media-icons">
-          <a href="https://www.instagram.com/merayamarket" target="_blank" rel="noopener"
-            aria-label="Visit Meraya Market on Instagram">
-            <i class="fab fa-instagram"></i>
+      <div class="info">
+        <h2><span>MERAYA</span> Pop Up Market</h2>
+        <h3>"Thrift Forward, Sustainable Y2K Style"</h3>
+        <p>“MERAYA Pop Up Market” adalah acara fashion thrift bertema "Thrift Forward, Sustainable Y2K Style," yang
+          mengajak
+          masyarakat berpartisipasi dalam gaya hidup berkelanjutan melalui thrifting dan amal. Acara ini menawarkan
+          pengalaman
+          berbelanja barang thrift yang modis sekaligus ramah lingkungan, dengan gaya retro <b>Y2K</b>. Selain
+          berbelanja,
+          pengunjung
+          juga dapat mengikuti kegiatan edukatif dan aksi sosial yang mendukung prinsip keberlanjutan.</p>
+        <div class="btn-container">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc8j4bvBSU_apPCNx7-SQBv83MSwtR2XLkSPb_bcz6yxPQRA/viewform"
+            class="btn" target="_blank" rel="noopener noreferrer">
+            Buy Ticket (10k)! <i class="fas fa-shopping-cart"></i>
           </a>
-          <a href="https://www.tiktok.com/@merayamarket" target="_blank" rel="noopener"
-            aria-label="Visit Meraya Market on TikTok">
-            <i class="fab fa-tiktok"></i>
+          <a href="#registration" class="btn">
+            Registration Other <i class="fas fa-sticky-note"></i>
           </a>
         </div>
-        <div class="info">
-          <h2><span>MERAYA</span> Pop Up Market</h2>
-          <h3>"Thrift Forward, Sustainable Y2K Style"</h3>
-          <p>“MERAYA Pop Up Market” adalah acara fashion thrift bertema "Thrift Forward, Sustainable Y2K Style," yang
-            mengajak
-            masyarakat berpartisipasi dalam gaya hidup berkelanjutan melalui thrifting dan amal. Acara ini menawarkan
-            pengalaman
-            berbelanja barang thrift yang modis sekaligus ramah lingkungan, dengan gaya retro <b>Y2K</b>. Selain berbelanja,
-            pengunjung
-            juga dapat mengikuti kegiatan edukatif dan aksi sosial yang mendukung prinsip keberlanjutan.</p>
-          <div class="btn-container">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc8j4bvBSU_apPCNx7-SQBv83MSwtR2XLkSPb_bcz6yxPQRA/viewform"
-              class="btn" target="_blank" rel="noopener noreferrer">
-              Buy Ticket (10k)! <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="#registration" class="btn">
-              Registration Other <i class="fas fa-sticky-note"></i>
-            </a>
-          </div>
+      </div>
+      <div class="home-img">
+        <img src="images/Logo-Meraya.png" alt="Logo Meraya Market">
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+  </section>
+
+
+  <!--=======Event Section=======-->
+  <section class="about section" id="about">
+    <div class="container flex-center">
+      <h1 class="section-title-01">About</h1>
+      <h2 class="section-title-02">About</h2>
+      <div class="content flex-center">
+        <div class="about-img karsa-img">
+          <img src="images/Logo-Karsa.PNG" alt="Logo Karsa">
         </div>
-        <div class="home-img">
-          <img src="images/Logo-Meraya.png" alt="Logo Meraya Market">
+        <div class="about-info">
+          <div class="description">
+            <h3>KARSA AKSA</h3>
+            <p>Karsa Aksa berarti “Tekad dan Pandangan yang Jauh.” Karsa melambangkan niat dan motivasi kuat untuk
+              mencapai
+              hasil
+              terbaik dalam sebuah event, sementara Aksa mewakili visi jauh ke depan, dengan kemampuan melihat peluang
+              dan
+              tantangan.
+              Filosofi ini menekankan pencapaian tujuan besar melalui perencanaan matang, demi menciptakan acara yang
+              berkesan
+              dan
+              sukses.</p>
+          </div>
         </div>
       </div>
-      <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
-    </section>
-
-
-    <!--=======Event Section=======-->
-    <section class="about section" id="about">
-      <div class="container flex-center">
-        <h1 class="section-title-01">About</h1>
-        <h2 class="section-title-02">About</h2>
-        <div class="content flex-center">
-          <div class="about-img karsa-img">
-            <img src="images/Logo-Karsa.PNG" alt="Logo Karsa">
+      <div class="content flex-center">
+        <div class="about-img meraya-img">
+          <img src="images/Logo-Meraya.png" alt="Logo Meraya">
+        </div>
+        <div class="about-info">
+          <div class="description">
+            <h3><span>MERAYA </span>Pop Up Market</h3>
+            <p>Nama acara ini terinspirasi dari lokasi Menteng Raya tempat Universitas Mercu Buana berada, mencerminkan
+              semangat
+              inovasi dan perubahan yang diusung oleh kampus. Mengangkat tema "Thrift Forward," acara ini hadir sebagai
+              respons
+              terhadap dampak lingkungan dari industri fashion dengan menawarkan solusi ramah lingkungan melalui
+              thrifting.</p>
           </div>
-          <div class="about-info">
-            <div class="description">
-              <h3>KARSA AKSA</h3>
-              <p>Karsa Aksa berarti “Tekad dan Pandangan yang Jauh.” Karsa melambangkan niat dan motivasi kuat untuk mencapai
-                hasil
-                terbaik dalam sebuah event, sementara Aksa mewakili visi jauh ke depan, dengan kemampuan melihat peluang dan
-                tantangan.
-                Filosofi ini menekankan pencapaian tujuan besar melalui perencanaan matang, demi menciptakan acara yang berkesan
-                dan
-                sukses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======visi-misi section=======-->
+  <section class="visi-misi section" id="visi-misi">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Visi & Misi</h1>
+      <h2 class="section-title-02">Visi & Misi</h2>
+      <div class="visi-misi-content">
+        <div class="visi-misi-description">
+          <h3>Visi</h3>
+          <p>
+            Menjadi platform inovatif yang menginspirasi transformasi gaya hidup menuju keberlanjutan, melalui edukasi
+            dan
+            partisipasi masyarakat dalam fashion thrift, serta menciptakan jaringan yang peduli terhadap lingkungan dan
+            masa depan industri fashion.
+          </p>
+        </div>
+        <div class="visi-misi-description">
+          <h3>Misi</h3>
+          <p>
+            1. Mengedukasi masyarakat tentang dampak negatif fast fashion serta mendorong thrifting sebagai solusi
+            berkelanjutan. <br>
+            2. Membangun komunitas yang mendukung keberlanjutan dan berbagi ide kreatif dalam gaya hidup yang lebih
+            hijau.
+            <br>
+            3. Mengintegrasikan aksi sosial melalui kegiatan charity yang mendukung lingkungan dan pemberdayaan
+            masyarakat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======Guest Section=======-->
+  <section class="guest section" id="guest">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Guest</h1>
+      <h2 class="section-title-02">Guest</h2>
+      <div class="content">
+        <ul class="service-list">
+
+          <!-- Guest 2 -->
+          <li class="service-container">
+            <div class="service-card">
+              <img src="images/Guest/Nathania Raissa.png" alt="raishu" class="guest-image">
+              <h3>Raishu</h3>
+              <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
             </div>
-          </div>
-        </div>
-        <div class="content flex-center">
-          <div class="about-img meraya-img">
-            <img src="images/Logo-Meraya.png" alt="Logo Meraya">
-          </div>
-          <div class="about-info">
-            <div class="description">
-              <h3><span>MERAYA </span>Pop Up Market</h3>
-              <p>Nama acara ini terinspirasi dari lokasi Menteng Raya tempat Universitas Mercu Buana berada, mencerminkan semangat
-              inovasi dan perubahan yang diusung oleh kampus. Mengangkat tema "Thrift Forward," acara ini hadir sebagai respons
-              terhadap dampak lingkungan dari industri fashion dengan menawarkan solusi ramah lingkungan melalui thrifting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--=======visi-misi section=======-->
-    <section class="visi-misi section" id="visi-misi">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Visi & Misi</h1>
-        <h2 class="section-title-02">Visi & Misi</h2>
-        <div class="visi-misi-content">
-          <div class="visi-misi-description">
-            <h3>Visi</h3>
-            <p>
-              Menjadi platform inovatif yang menginspirasi transformasi gaya hidup menuju keberlanjutan, melalui edukasi dan
-              partisipasi masyarakat dalam fashion thrift, serta menciptakan jaringan yang peduli terhadap lingkungan dan
-              masa depan industri fashion.
-            </p>
-          </div>
-          <div class="visi-misi-description">
-            <h3>Misi</h3>
-            <p>
-              1. Mengedukasi masyarakat tentang dampak negatif fast fashion serta mendorong thrifting sebagai solusi
-              berkelanjutan. <br>
-              2. Membangun komunitas yang mendukung keberlanjutan dan berbagi ide kreatif dalam gaya hidup yang lebih hijau.
-              <br>
-              3. Mengintegrasikan aksi sosial melalui kegiatan charity yang mendukung lingkungan dan pemberdayaan
-              masyarakat.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--=======Guest Section=======-->
-    <section class="guest section" id="guest">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Guest</h1>
-        <h2 class="section-title-02">Guest</h2>
-        <div class="content">
-          <ul class="service-list">
-    
-            <!-- Guest 2 -->
-            <li class="service-container">
-              <div class="service-card">
-                <img src="images/Guest/Nathania Raissa.png" alt="raishu" class="guest-image">
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
                 <h3>Raishu</h3>
-                <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
-              </div>
-              <div class="service-modal flex-center">
-                <div class="service-modal-body">
-                  <i class="fas fa-times modal-close-btn"></i>
-                  <h3>Raishu</h3>
-                  <!-- Menambahkan gambar profil -->
-                  <img src="images/Guest/Nathania Raissa.png" alt="raishu" class="guest-photo">
-                  <p>Nathania Raissa atau biasa dikenal raishu, adalah seorang TikToker dan selebgram asal Bekasi yang berhasil mencuri
-                  perhatian lewat konten-konten kocak dan relatable tentang kehidupan sehari-hari. Tak hanya dikenal karena
-                  kreativitasnya, tetapi juga penampilannya yang stylish dan paras cantik. Konsistensinya dalam membagikan video lucu yang
+                <!-- Menambahkan gambar profil -->
+                <img src="images/Guest/Nathania Raissa.png" alt="raishu" class="guest-photo">
+                <p>Nathania Raissa atau biasa dikenal raishu, adalah seorang TikToker dan selebgram asal Bekasi yang
+                  berhasil mencuri
+                  perhatian lewat konten-konten kocak dan relatable tentang kehidupan sehari-hari. Tak hanya dikenal
+                  karena
+                  kreativitasnya, tetapi juga penampilannya yang stylish dan paras cantik. Konsistensinya dalam
+                  membagikan video lucu yang
                   menghibur serta OOTD kekinian menjadikan Raishu sebagai inspirasi bagi banyak anak muda masa kini
-                  </p>
-                  <h4>Nama lengkap:</h4>
-                  <p>Nathania Raissa</p>
-                  <ul>
-                    <h4>Sosial Media:</h4>
-                    <li><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@raishuu_" target="_blank"
-                        rel="noopener noreferrer">@raishuu_</a></li>
-                    <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/r4ishu" target="_blank"
-                        rel="noopener noreferrer">@r4ishu</a></li>
-                  </ul>
-                  <ul>
-                    <h4>Followers:</h4>
-                    <li><i class="fab fa-tiktok"></i> Tiktok Followers: 1.3M</li>
-                    <li><i class="fab fa-instagram"></i> Instagram Followers: 169K</li>
-                  </ul>
-                </div>
+                </p>
+                <h4>Nama lengkap:</h4>
+                <p>Nathania Raissa</p>
+                <ul>
+                  <h4>Sosial Media:</h4>
+                  <li><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@raishuu_" target="_blank"
+                      rel="noopener noreferrer">@raishuu_</a></li>
+                  <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/r4ishu"
+                      target="_blank" rel="noopener noreferrer">@r4ishu</a></li>
+                </ul>
+                <ul>
+                  <h4>Followers:</h4>
+                  <li><i class="fab fa-tiktok"></i> Tiktok Followers: 1.3M</li>
+                  <li><i class="fab fa-instagram"></i> Instagram Followers: 169K</li>
+                </ul>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <!-- Guest 1 -->
-            <li class="service-container">
-              <div class="service-card">
-                <img src="images/Guest/Ratu Lubis.png" alt="Ratu Lubis" class="guest-image">
+          <!-- Guest 1 -->
+          <li class="service-container">
+            <div class="service-card">
+              <img src="images/Guest/Ratu Lubis.png" alt="Ratu Lubis" class="guest-image">
+              <h3>Ratu Lubis</h3>
+              <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
                 <h3>Ratu Lubis</h3>
-                <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
+                <!-- Menambahkan gambar profil -->
+                <img src="images/Guest/Ratu Lubis.png" alt="Ratu Lubis" class="guest-photo">
+                <p>Ratu Lubis, seorang lulusan Teknik Sipil sekaligus Co-Founder Kayt Studio, adalah sosok inspiratif
+                  yang menggabungkan
+                  kreativitas dengan visi keberlanjutan di dunia fashion. Selain memiliki pengalaman studi di luar
+                  negeri yang membentuk
+                  kemandiriannya, Ratu juga aktif dalam mengasah keterampilan di bidang media sosial, marketing, dan
+                  public relations.</p>
+                <h4>Nama lengkap:</h4>
+                <p>Ratu Lubis</p>
+                <ul>
+                  <h4>Sosial Media:</h4>
+                  <li><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@utaaaar" target="_blank"
+                      rel="noopener">@utaaaar</a></li>
+                  <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/ratu_lubis"
+                      target="_blank" rel="noopener noreferrer">@ratu_lubis</a></li>
+                </ul>
+                <ul>
+                  <h4>Followers:</h4>
+                  <li><i class="fab fa-tiktok"></i> Tiktok Followers: 19.9K</li>
+                  <li><i class="fab fa-instagram"></i> Instagram Followers: 11.2K</li>
+                </ul>
               </div>
-              <div class="service-modal flex-center">
-                <div class="service-modal-body">
-                  <i class="fas fa-times modal-close-btn"></i>
-                  <h3>Ratu Lubis</h3>
-                  <!-- Menambahkan gambar profil -->
-                  <img src="images/Guest/Ratu Lubis.png" alt="Ratu Lubis" class="guest-photo">
-                  <p>Ratu Lubis, seorang lulusan Teknik Sipil sekaligus Co-Founder Kayt Studio, adalah sosok inspiratif yang menggabungkan
-                  kreativitas dengan visi keberlanjutan di dunia fashion. Selain memiliki pengalaman studi di luar negeri yang membentuk
-                  kemandiriannya, Ratu juga aktif dalam mengasah keterampilan di bidang media sosial, marketing, dan public relations.</p>
-                  <h4>Nama lengkap:</h4>
-                  <p>Ratu Lubis</p>
-                  <ul>
-                    <h4>Sosial Media:</h4>
-                    <li><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@utaaaar" target="_blank"
-                        rel="noopener">@utaaaar</a></li>
-                    <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/ratu_lubis" target="_blank"
-                        rel="noopener noreferrer">@ratu_lubis</a></li>
-                  </ul>
-                  <ul>
-                    <h4>Followers:</h4>
-                    <li><i class="fab fa-tiktok"></i> Tiktok Followers: 19.9K</li>
-                    <li><i class="fab fa-instagram"></i> Instagram Followers: 11.2K</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-    
-            <!-- Guest 3 -->
-            <li class="service-container">
-              <div class="service-card">
-                <img src="images/Guest/Mahitala.png" alt="Mahitala" class="guest-image">
-                <h3>Mahitala</h3>
-                <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
-              </div>
-              <div class="service-modal flex-center">
-                <div class="service-modal-body">
-                  <i class="fas fa-times modal-close-btn"></i>
-                  <h3>Mahitala</h3>
-                  <!-- Menambahkan gambar profil -->
-                  <img src="images/Guest/Mahitala.png" alt="Mahitala" class="guest-photo">
-                  <p>"Dynamic groove music performance by Mahitala", Mahitala merupakan suatu band ber-genre groove jazz, pop yang terbentuk
-                  sejak Mei 2019, berawal dari pertemuan tak disengaja antara beberapa personil pada sebuah acara sekolah hingga akhirnya
-                  tercipta persatuan bakat-bakat daripada para personil. Mahitala sendiri berarti bumi, bervisi tentang apapun yang kami
-                  miliki semuanya harus membumi.</p>
-                  <ul>
-                    <h4>Nama Band:</h4>
-                    <p>Mahitala</p>
-                    <li>Vocalist: Ananda Rafif Maalik</li>
-                    <li>Keyboardist: Adwityananda Mahatmandaru</li>
-                    <li>Bassist: Audi Rafisky Soepandji</li>
-                  </ul>
-                  <ul>
-                    <h4>Sosial Media:</h4>
-                    <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/mahitala.music" target="_blank"
-                        rel="noopener noreferrer">@mahitala.music</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            </div>
+          </li>
 
-    <!--=======Portfolio section=======-->
-    <section class="portfolio section" id="activities">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Activities</h1>
-        <h2 class="section-title-02">Activities</h2>
-        <div class="content">
-          <div class="portfolio-list">
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Bazaar</h3>
-                  <span>Hottest Bazaar Town</span>
-                </div>
+          <!-- Guest 3 -->
+          <li class="service-container">
+            <div class="service-card">
+              <img src="images/Guest/Mahitala.png" alt="Mahitala" class="guest-image">
+              <h3>Mahitala</h3>
+              <div class="learn-more-btn">Kenali Saya <i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>Mahitala</h3>
+                <!-- Menambahkan gambar profil -->
+                <img src="images/Guest/Mahitala.png" alt="Mahitala" class="guest-photo">
+                <p>"Dynamic groove music performance by Mahitala", Mahitala merupakan suatu band ber-genre groove jazz,
+                  pop yang terbentuk
+                  sejak Mei 2019, berawal dari pertemuan tak disengaja antara beberapa personil pada sebuah acara
+                  sekolah hingga akhirnya
+                  tercipta persatuan bakat-bakat daripada para personil. Mahitala sendiri berarti bumi, bervisi tentang
+                  apapun yang kami
+                  miliki semuanya harus membumi.</p>
+                <ul>
+                  <h4>Nama Band:</h4>
+                  <p>Mahitala</p>
+                  <li>Vocalist: Ananda Rafif Maalik</li>
+                  <li>Keyboardist: Adwityananda Mahatmandaru</li>
+                  <li>Bassist: Audi Rafisky Soepandji</li>
+                </ul>
+                <ul>
+                  <h4>Sosial Media:</h4>
+                  <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/mahitala.music"
+                      target="_blank" rel="noopener noreferrer">@mahitala.music</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--=======Portfolio section=======-->
+  <section class="portfolio section" id="activities">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Activities</h1>
+      <h2 class="section-title-02">Activities</h2>
+      <div class="content">
+        <div class="portfolio-list">
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Bazaar</h3>
+                <span>Hottest Bazaar Town</span>
+              </div>
+              <img src="images/Activities/Bazaar.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Bazaar</h3>
+                <span>Hottest Bazaar In Town</span>
                 <img src="images/Activities/Bazaar.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Bazaar</h3>
-                  <span>Hottest Bazaar In Town</span>
-                  <img src="images/Activities/Bazaar.jpg" alt="">
-                  <p>MERAYA Pop Up Market menghadirkan dua zona: <span>Zona Fashion Y2K</span> dengan 13 tenant yang menawarkan koleksi thrift dari era
-                  2000-an, dan <span>Zona Aksesoris</span> yang menjual perhiasan DIY seperti gelang dan kalung handmade. Zona ini mengajak pengunjung
+                <p>MERAYA Pop Up Market menghadirkan dua zona: <span>Zona Fashion Y2K</span> dengan 13 tenant yang
+                  menawarkan koleksi thrift dari era
+                  2000-an, dan <span>Zona Aksesoris</span> yang menjual perhiasan DIY seperti gelang dan kalung
+                  handmade. Zona ini mengajak pengunjung
                   mendukung gaya hidup berkelanjutan melalui pilihan fashion dan aksesori unik.</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Talk Show</h3>
-                  <span>Form Trash To Treasure</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Talk Show</h3>
+                <span>Form Trash To Treasure</span>
+              </div>
+              <img src="images/Activities/Talkshow.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Talk Show</h3>
+                <span>Form Trash To Treasure</span>
                 <img src="images/Activities/Talkshow.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Talk Show</h3>
-                  <span>Form Trash To Treasure</span>
-                  <img src="images/Activities/Talkshow.jpg" alt="">
-                  <p>Diskusi tentang mengubah pakaian tak terpakai menjadi fashion statement berkelanjutan, dengan subtema "Change Your
-                  Unwear Clothes to be Wearable Fashion Statement." Narasumber dari dunia fashion akan berbagi pengalaman tentang
+                <p>Diskusi tentang mengubah pakaian tak terpakai menjadi fashion statement berkelanjutan, dengan subtema
+                  "Change Your
+                  Unwear Clothes to be Wearable Fashion Statement." Narasumber dari dunia fashion akan berbagi
+                  pengalaman tentang
                   thrifting, tips memilih pakaian thrift, dan interaksi langsung melalui sesi tanya jawab.</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Work Shop</h3>
-                  <span>Rayabeads</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Work Shop</h3>
+                <span>Rayabeads</span>
+              </div>
+              <img src="images/Activities/Workshop.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Work Shop</h3>
+                <span>Rayabeads</span>
                 <img src="images/Activities/Workshop.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Work Shop</h3>
-                  <span>Rayabeads</span>
-                  <img src="images/Activities/Workshop.jpg" alt="">
-                  <p>Workshop kreatif membuat aksesori handmade dari beads seperti gelang dan phone strap. Peserta akan mendapatkan <span>beads kit</span>
+                <p>Workshop kreatif membuat aksesori handmade dari beads seperti gelang dan phone strap. Peserta akan
+                  mendapatkan <span>beads kit</span>
                   dan diarahkan oleh tim berpengalaman untuk merancang aksesori sesuai selera.</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Competition</h3>
-                  <span>Fashion Show dan Photography</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Competition</h3>
+                <span>Fashion Show dan Photography</span>
+              </div>
+              <img src="images/Activities/Competition.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Competition</h3>
+                <span>Fashion Show dan Photography</span>
                 <img src="images/Activities/Competition.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Competition</h3>
-                  <span>Fashion Show dan Photography</span>
-                  <img src="images/Activities/Competition.jpg" alt="">
-                  <p>Fashion show bertema Y2K yang juga mencakup lomba fotografi, menciptakan kolaborasi seni antara model, busana, dan
+                <p>Fashion show bertema Y2K yang juga mencakup lomba fotografi, menciptakan kolaborasi seni antara
+                  model, busana, dan
                   fotografi dalam suasana yang dinamis.</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Live Music</h3>
-                  <span>Let's Sing ALong</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Live Music</h3>
+                <span>Let's Sing ALong</span>
+              </div>
+              <img src="images/Activities/Live Music.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Live Music</h3>
+                <span>Let's Sing ALong</span>
                 <img src="images/Activities/Live Music.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Live Music</h3>
-                  <span>Let's Sing ALong</span>
-                  <img src="images/Activities/Live Music.jpg" alt="">
-                  <p>Pertunjukan musik akustik dari band indie yang sesuai dengan tema keberlanjutan dan gaya Y2K, menciptakan atmosfer
+                <p>Pertunjukan musik akustik dari band indie yang sesuai dengan tema keberlanjutan dan gaya Y2K,
+                  menciptakan atmosfer
                   santai yang menyenangkan bagi pengunjung</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Charity</h3>
-                  <span>Y2Care</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Charity</h3>
+                <span>Y2Care</span>
+              </div>
+              <img src="images/Activities/Charity.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Charity</h3>
+                <span>Y2Care</span>
                 <img src="images/Activities/Charity.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Charity</h3>
-                  <span>Y2Care</span>
-                  <img src="images/Activities/Charity.jpg" alt="">
-                  <p>Program donasi pakaian melalui <span>Clothes for Charity</span>, di mana donasi pakaian layak akan disalurkan kepada yang
-                  membutuhkan. Para donatur akan diakui di media sosial sebagai <span>Pahlawan Kebaikan</span> atas kontribusi mereka.</p>
-                </div>
+                <p>Program donasi pakaian melalui <span>Clothes for Charity</span>, di mana donasi pakaian layak akan
+                  disalurkan kepada yang
+                  membutuhkan. Para donatur akan diakui di media sosial sebagai <span>Pahlawan Kebaikan</span> atas
+                  kontribusi mereka.</p>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Photobooth</h3>
-                  <span>Y2K Style</span>
-                </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Photobooth</h3>
+                <span>Y2K Style</span>
+              </div>
+              <img src="images/Activities/Photobooth.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Photobooth</h3>
+                <span>Y2K Style</span>
                 <img src="images/Activities/Photobooth.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Photobooth</h3>
-                  <span>Y2K Style</span>
-                  <img src="images/Activities/Photobooth.jpg" alt="">
-                  <p>Photobooth bertemakan Y2K style mengusung estetika era akhir 1990-an hingga awal 2000-an yang identik dengan kesan
+                <p>Photobooth bertemakan Y2K style mengusung estetika era akhir 1990-an hingga awal 2000-an yang identik
+                  dengan kesan
                   futuristik, playful, dan vibrant.</p>
-                </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Photobox Sketch</h3>
-                  <span>Mekarya</span>
-                </div>
-                <img src="images/Activities/Photobox Sketch.jpg" alt="">
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Photobox Sketch</h3>
+                <span>Mekarya</span>
               </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Photobox Sketch</h3>
-                  <span>Mekarya</span>
-                  <img src="images/Activities/Photobox Sketch.jpg" alt="">
-                  <p>Layanan unik yang menggabungkan teknologi sederhana dengan seni tradisional. Alih-alih hasil digital, foto pengguna
-                  diubah menjadi sketsa manual oleh seniman langsung pada kertas, menciptakan pengalaman artistik yang personal dan
+              <img src="images/Activities/Photobox Sketch.jpg" alt="">
+            </div>
+            <div class="porfolio-model flex-center">
+              <div class="portfolio-model-body">
+                <i class="fas fa-times portfolio-close-btn"></i>
+                <h3>Photobox Sketch</h3>
+                <span>Mekarya</span>
+                <img src="images/Activities/Photobox Sketch.jpg" alt="">
+                <p>Layanan unik yang menggabungkan teknologi sederhana dengan seni tradisional. Alih-alih hasil digital,
+                  foto pengguna
+                  diubah menjadi sketsa manual oleh seniman langsung pada kertas, menciptakan pengalaman artistik yang
+                  personal dan
                   autentik.</p>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--======= Get-in-touch Carousel =======-->
-    <section class="get-in-touch section" id="registration">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Registration</h1>
-        <h2 class="section-title-02">Registration</h2>
-        <div class="content">
-          <div class="swiper get-in-touch-swiper">
-            <div class="swiper-wrapper">
-              <!-- Slide 1: Meraya Bazaar 10k -->
-              <div class="swiper-slide flex-center">
-                <div class="contact-card">
-                  <div class="title">
-                    <h4>Registration</h4>
-                    <h3>Meraya Bazaar</h3>
-                    <h2>10k</h2>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc8j4bvBSU_apPCNx7-SQBv83MSwtR2XLkSPb_bcz6yxPQRA/viewform " class="btn" 
-                      target="_blank" rel="noopener noreferrer">
-                      Buy Now <i class="fas fa-shopping-cart"></i>
-                    </a>
-                  </div>
+  <!--======= Get-in-touch Carousel =======-->
+  <section class="get-in-touch section" id="registration">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Registration</h1>
+      <h2 class="section-title-02">Registration</h2>
+      <div class="content">
+        <div class="swiper get-in-touch-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Meraya Bazaar 10k -->
+            <div class="swiper-slide flex-center">
+              <div class="contact-card">
+                <div class="title">
+                  <h4>Registration</h4>
+                  <h3>Meraya Bazaar</h3>
+                  <h2>10k</h2>
                 </div>
-              </div>
-              <!-- Slide 2: Fashion Show (Competition) 30k -->
-              <div class="swiper-slide flex-center">
-                <div class="contact-card">
-                  <div class="title">
-                    <h4>Registration</h4>
-                    <h3>Fashion Show (Competition)</h3>
-                    <h2>30k</h2>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="https://bit.ly/PendaftaranMerayaFashionShow" class="btn" target="_blank"
-                      rel="noopener noreferrer">
-                      Register Now 
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 3: Photography (Competition) Free -->
-              <div class="swiper-slide flex-center">
-                <div class="contact-card">
-                  <div class="title">
-                    <h4>Registration</h4>
-                    <h3>Photography (Competition)</h3>
-                    <h2>Free</h2>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="https://bit.ly/PendaftaranPhotographyMeraya" class="btn" target="_blank"
-                      rel="noopener noreferrer">
-                      Register Now 
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 4: Workshop Beads, Start From 15K only -->
-              <div class="swiper-slide flex-center">
-                <div class="contact-card">
-                  <div class="title">
-                    <h4>Registration</h4>
-                    <h3>Workshop Beads </h3>
-                    <h4>Start form</h4>
-                    <h2>15k</h2>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="https://bit.ly/PendaftaranRayaBeadsWorkshop" class="btn" target="_blank"
-                      rel="noopener noreferrer">
-                      Register Now 
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 5: Charity, Free -->
-              <div class="swiper-slide flex-center">
-                <div class="contact-card">
-                  <div class="title">
-                    <h4>Registration</h4>
-                    <h3>Charity</h3>
-                    <h2>Free</h2>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="https://bit.ly/PENDAFTARANCHARITYMERAYA" class="btn" target="_blank"
-                      rel="noopener noreferrer">
-                      Register Now 
-                    </a>
-                  </div>
+                <div class="contact-btn">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc8j4bvBSU_apPCNx7-SQBv83MSwtR2XLkSPb_bcz6yxPQRA/viewform "
+                    class="btn" target="_blank" rel="noopener noreferrer">
+                    Buy Now <i class="fas fa-shopping-cart"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <!-- Swiper Navigation -->
-            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            <!-- Slide 2: Fashion Show (Competition) 30k -->
+            <div class="swiper-slide flex-center">
+              <div class="contact-card">
+                <div class="title">
+                  <h4>Registration</h4>
+                  <h3>Fashion Show (Competition)</h3>
+                  <h2>30k</h2>
+                </div>
+                <div class="contact-btn">
+                  <a href="https://bit.ly/PendaftaranMerayaFashionShow" class="btn" target="_blank"
+                    rel="noopener noreferrer">
+                    Register Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3: Photography (Competition) Free -->
+            <div class="swiper-slide flex-center">
+              <div class="contact-card">
+                <div class="title">
+                  <h4>Registration</h4>
+                  <h3>Photography (Competition)</h3>
+                  <h2>Free</h2>
+                </div>
+                <div class="contact-btn">
+                  <a href="https://bit.ly/PendaftaranPhotographyMeraya" class="btn" target="_blank"
+                    rel="noopener noreferrer">
+                    Register Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4: Workshop Beads, Start From 15K only -->
+            <div class="swiper-slide flex-center">
+              <div class="contact-card">
+                <div class="title">
+                  <h4>Registration</h4>
+                  <h3>Workshop Beads </h3>
+                  <h4>Start form</h4>
+                  <h2>15k</h2>
+                </div>
+                <div class="contact-btn">
+                  <a href="https://bit.ly/PendaftaranRayaBeadsWorkshop" class="btn" target="_blank"
+                    rel="noopener noreferrer">
+                    Register Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5: Charity, Free -->
+            <div class="swiper-slide flex-center">
+              <div class="contact-card">
+                <div class="title">
+                  <h4>Registration</h4>
+                  <h3>Charity</h3>
+                  <h2>Free</h2>
+                </div>
+                <div class="contact-btn">
+                  <a href="https://bit.ly/PENDAFTARANCHARITYMERAYA" class="btn" target="_blank"
+                    rel="noopener noreferrer">
+                    Register Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======Our Crew=======-->
+  <section class="our-crew section" id="our-crew">
+    <div class="our-client">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Our Crew</h1>
+        <h2 class="section-title-02">Our Crew</h2>
+        <div class="content">
+          <div class="swiper client-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/1 Penanggung Jawab.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Martina Shalaty Putri</h3>
+                  <p>Penanggung Jawab</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/2 Ketua.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Hiskia Andersen Girsang</h3>
+                  <p>Ketua Pelaksana</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/3 Waketu internal.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Oktafiyani Az Zahro</h3>
+                  <p>Wakil Ketua ( Internal )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/4 Waketu Eksternal.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Achmad Wibi Dermawan</h3>
+                  <p>Wakil Ketua ( Eksternal )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/5 BPH (Sekre, Bendahara, Humas).png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>BPH</h3>
+                  <p>( Sekretaris, Bendahara, Humas )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/6 Divisi acara (Lo Bazaar n Talkshow).png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Divisi Acara</h3>
+                  <p>( Lo Bazaar, Talkshow dan Live Music )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/7 Divisi Acara (PIC 1 dan 2, Lo Charity, Lo Workshop, Lo lomba foto).png"
+                    alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Divisi Acara</h3>
+                  <p>( Lo Charity, Workshop, Competition )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/8 Divisi acara (Usher).png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Divisi Acara</h3>
+                  <p>( Usher )</p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/9 Sponsor dan logistik.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Sponsorship Dan Konsumsi</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/10 Runner.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Runner</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/11 Crowd Control keamanan.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Crowd Control Keamanan</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/13 Design dan PIC.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>PIC PDD dan Design</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/12 Sosmed.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Sosial Media</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="client-img">
+                  <img src="images/Crew/14 Dokumentasi.png" alt="">
+                </div>
+                <div class="client-details">
+                  <h3>Dokumentasi</h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
-    </section>
-      
-    <!--=======Our Crew=======-->
-    <section class="our-crew section" id="our-crew">
-      <div class="our-client">
-        <div class="container flex-center">
-          <h1 class="section-title-01">Our Crew</h1>
-          <h2 class="section-title-02">Our Crew</h2>
-          <div class="content">
-            <div class="swiper client-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/1 Penanggung Jawab.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Martina Shalaty Putri</h3>
-                    <p>Penanggung Jawab</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/2 Ketua.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Hiskia Andersen Girsang</h3>
-                    <p>Ketua Pelaksana</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/3 Waketu internal.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Oktafiyani Az Zahro</h3>
-                    <p>Wakil Ketua ( Internal )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/4 Waketu Eksternal.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Achmad Wibi Dermawan</h3>
-                    <p>Wakil Ketua ( Eksternal )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/5 BPH (Sekre, Bendahara, Humas).png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>BPH</h3>
-                    <p>( Sekretaris, Bendahara, Humas )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/6 Divisi acara (Lo Bazaar n Talkshow).png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Divisi Acara</h3>
-                    <p>( Lo Bazaar, Talkshow dan Live Music )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/7 Divisi Acara (PIC 1 dan 2, Lo Charity, Lo Workshop, Lo lomba foto).png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Divisi Acara</h3>
-                    <p>( Lo Charity, Workshop, Competition )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/8 Divisi acara (Usher).png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Divisi Acara</h3>
-                    <p>( Usher )</p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/9 Sponsor dan logistik.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Sponsorship Dan Konsumsi</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/10 Runner.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Runner</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/11 Crowd Control keamanan.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Crowd Control Keamanan</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/13 Design dan PIC.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>PIC PDD dan Design</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/12 Sosmed.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Sosial Media</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="swiper-slide flex-center">
-                  <div class="client-img">
-                    <img src="images/Crew/14 Dokumentasi.png" alt="">
-                  </div>
-                  <div class="client-details">
-                    <h3>Dokumentasi</h3>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-button-next">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="fas fa-chevron-left"></i>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Contact Us</h1>
-        <h2 class="section-title-02">Contact Us</h2>
-        <div class="content">
-          <div class="contact-left">
-            <h2>Contact Us Here</h2>
-            <ul class="contact-list">
-              <li>
-                <h3 class="item-title"><i class="fas fa-phone"></i> Humas - Thoriq:</h3>
-                <span>
-                  <a href="https://wa.me/6285894664619" target="_blank" rel="noopener noreferrer">+62 858-9466-4619</a>
-                </span>
-              </li>
-              <li>
-                <h3 class="item-title"><i class="fas fa-phone"></i> Sponsor - Neysa:</h3>
-                <span>
-                  <a href="https://wa.me/62895383320100" target="_blank" rel="noopener noreferrer">+62 895-3833-20100</a>
-                </span>
-              </li>
-              <li>
-                <h3 class="item-title"><i class="fas fa-envelope"></i> Email:</h3>
-                <span>
-                  <a href="mailto:merayamarket@gmail.com" target="_blank" rel="noopener noreferrer">merayamarket@gmail.com</a>
-                </span>
-              </li>
-              <li>
-                <h3 class="item-title"><i class="fab fa-tiktok"></i> TikTok:</h3>
-                <span>
-                  <a href="https://www.tiktok.com/@merayamarket" target="_blank" rel="noopener noreferrer">@merayamarket</a>
-                </span>
-              </li>
-              <li>
-                <h3 class="item-title"><i class="fab fa-instagram"></i> Instagram:</h3>
-                <span>
-                  <a href="https://www.instagram.com/merayamarket" target="_blank" rel="noopener noreferrer">@merayamarket</a>
-                </span>
-              </li>
-              <li>
-                <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Location:</h3>
-                <span>Jl. Menteng Raya No.29 1, RT.1/RW.10, Kb. Sirih, Kec. Menteng Kota Jakarta Pusat, Daerah Khusus
-                  Ibukota Jakarta 10340</span>
-              </li>
-            </ul>
+    </div>
+  </section>
 
 
-            <!-- Map -->
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.294649701813!2d106.83517143848627!3d-6.185680098450445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4375adf87ed%3A0x5d7dd4a35e1f361e!2sLantai%202%20Jl.%20Menteng%20Raya%20No.29%2C%20Kb.%20Sirih%2C%20Kec.%20Menteng%2C%20Gedung%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010340%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1731220189209!5m2!1sen!2sus"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-right">
-            <p>Send Your Message <br> <span>HERE !!</span></p>
-            <form id="contact-form" class="contact-form">
-              <input type="hidden" name="access_key" value="20b1d2d2-4b16-43ed-8ac8-bedee296d25c">
-              <div class="first-row">
-                <input type="text" name="name" placeholder="Name" required>
-              </div>
-              <div class="first-row">
-                <input type="email" name="email" placeholder="Email" required>
-              </div>
-              <div class="first-row">
-                <input type="text" name="subject" placeholder="Subject" required>
-              </div>
-              <div class="third-row">
-                <textarea name="message" rows="7" placeholder="Message" required></textarea>
-              </div>
-              <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!--======= Sponsorship Section =======-->
-    <section class="sponsorship section" id="sponsorship">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Sponsorship</h1>
-        <h2 class="section-title-02">Sponsors</h2>
-        <div class="sponsorship-images">
-          <!-- Gambar Sponsor 1: ASROLEN (Large) -->
-          <div class="sponsor-logo large">
-            <img src="images/Sponsorship/3.png" alt="Sponsor ASROLEN">
-          </div>
-          <!-- Gambar Sponsor 2: WARDAH - BOOTH (Large) -->
-          <div class="sponsor-logo large">
-            <img src="images/Sponsorship/5.png" alt="Sponsor WARDAH - BOOTH">
-          </div>
-          <!-- Gambar Sponsor 6: KAPAL API (Large) -->
-          <div class="sponsor-logo large">
-            <img src="images/Sponsorship/4.png" alt="Sponsor KAPAL API">
-          </div>
-          <!-- Gambar Sponsor 3: BUYNANA (Medium) -->
-          <div class="sponsor-logo medium">
-            <img src="images/Sponsorship/7.png" alt="Sponsor BUYNANA">
-          </div>
-          <!-- Gambar Sponsor 4: SARI ROTI (Medium) -->
-          <div class="sponsor-logo medium">
-            <img src="images/Sponsorship/8.png" alt="Sponsor SARI ROTI">
-          </div>
-          <!-- Gambar Sponsor 5: AIR GUNUNG (Medium) -->
-          <div class="sponsor-logo medium">
-            <img src="images/Sponsorship/6.png" alt="Sponsor AIR GUNUNG">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--======= Media Partner Section =======-->
-    <section class="media-partner section" id="media-partner">
-      <div class="container flex-center">
-        <h1 class="section-title-01">Media Partner</h1>
-        <h2 class="section-title-02">Media Partners</h2>
-        <div class="media-partner-images">
-          <!-- Gambar Media Partner 1 -->
-          <div class="partner-logo">
-            <img src="images/Media Partner/CFC.PNG" alt="Media Partner 1">
-          </div>
-          <!-- Gambar Media Partner 2 -->
-          <div class="partner-logo">
-            <img src="images/Media Partner/DG.png" alt="Media Partner 2">
-          </div>
-          <!-- Gambar Media Partner 3 -->
-          <div class="partner-logo hima-logo">
-            <img src="images/Media Partner/HIMA PNG.png" alt="Media Partner 3">
-          </div>
-          <!-- Gambar Media Partner 4 -->
-          <div class="partner-logo">
-            <img src="images/Media Partner/IMG_2795.PNG" alt="Media Partner 4">
-          </div>
-          <!-- Gambar Media Partner 5 -->
-          <div class="partner-logo">
-            <img src="images/Media Partner/Logo BEM.png" alt="Media Partner 5">
-          </div>
-          <!-- Gambar Media Partner 6 -->
-          <div class="partner-logo hima-logo">
-            <img src="images/Media Partner/Rebranding Suara Utama-01-01.png" alt="Media Partner 6">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!--=======Footer=======-->
-    <footer>
-      <div class="footer-container">
-        <div class="about group">
-          <h2>Meraya</h2>
-          <p>Pop Up Market</p>
-          <a href="#home">Home</a>
-        </div>
-        <div class="hr"></div>
-        <div class="info group">
-          <h3>More</h3>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#guest">Guest</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#registration">Registration</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Contact Us</h1>
+      <h2 class="section-title-02">Contact Us</h2>
+      <div class="content">
+        <div class="contact-left">
+          <h2>Contact Us Here</h2>
+          <ul class="contact-list">
+            <li>
+              <h3 class="item-title"><i class="fas fa-phone"></i> Humas - Thoriq:</h3>
+              <span>
+                <a href="https://wa.me/6285894664619" target="_blank" rel="noopener noreferrer">+62 858-9466-4619</a>
+              </span>
+            </li>
+            <li>
+              <h3 class="item-title"><i class="fas fa-phone"></i> Sponsor - Neysa:</h3>
+              <span>
+                <a href="https://wa.me/62895383320100" target="_blank" rel="noopener noreferrer">+62 895-3833-20100</a>
+              </span>
+            </li>
+            <li>
+              <h3 class="item-title"><i class="fas fa-envelope"></i> Email:</h3>
+              <span>
+                <a href="mailto:merayamarket@gmail.com" target="_blank"
+                  rel="noopener noreferrer">merayamarket@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <h3 class="item-title"><i class="fab fa-tiktok"></i> TikTok:</h3>
+              <span>
+                <a href="https://www.tiktok.com/@merayamarket" target="_blank"
+                  rel="noopener noreferrer">@merayamarket</a>
+              </span>
+            </li>
+            <li>
+              <h3 class="item-title"><i class="fab fa-instagram"></i> Instagram:</h3>
+              <span>
+                <a href="https://www.instagram.com/merayamarket" target="_blank"
+                  rel="noopener noreferrer">@merayamarket</a>
+              </span>
+            </li>
+            <li>
+              <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Location:</h3>
+              <span>Taman Ismail Marzuki (TIM),Jl. Cikini Raya No.8, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta
+              10330</span>
+            </li>
           </ul>
-        </div>
-        <div class="hr"></div>
-        <div class="follow group">
-          <h3>Follow</h3>
-          <ul>
-            <li><a href="https://www.tiktok.com/@merayamarket" target="_blank" rel="noopener"
-                aria-label="Visit Meraya Market on TikTok"><i class="fab fa-tiktok"></i></a></li>
-            <li><a href="https://www.instagram.com/merayamarket" target="_blank" rel="noopener"
-                aria-label="Visit Meraya Market on Instagram"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-copyright group">
-        <p>&copy; 2024 by Meraya Karsa Aksa. All rights reserved.</p>
-      </div>
-    </footer>
 
-    <!--=======External scripts=======-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-  </body>
+
+          <!-- Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8192095456779!2d106.83859603412297!3d-6.190425945110994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f51f0ca6b0eb%3A0xe5788342658120f1!2sTaman%20Ismail%20Marzuki%20(TIM)!5e0!3m2!1sid!2sid!4v1732591429837!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-right">
+          <p>Send Your Message <br> <span>HERE !!</span></p>
+          <form id="contact-form" class="contact-form">
+            <input type="hidden" name="access_key" value="20b1d2d2-4b16-43ed-8ac8-bedee296d25c">
+            <div class="first-row">
+              <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="first-row">
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="first-row">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="third-row">
+              <textarea name="message" rows="7" placeholder="Message" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--======= Sponsorship Section =======-->
+  <section class="sponsorship section" id="sponsorship">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Sponsorship</h1>
+      <h2 class="section-title-02">Sponsors</h2>
+      <div class="sponsorship-images">
+        <!-- Gambar Sponsor 1: ASROLEN (Large) -->
+        <div class="sponsor-logo large">
+          <img src="images/Sponsorship/3.png" alt="Sponsor ASROLEN">
+        </div>
+        <!-- Gambar Sponsor 2: WARDAH - BOOTH (Large) -->
+        <div class="sponsor-logo large">
+          <img src="images/Sponsorship/5.png" alt="Sponsor WARDAH - BOOTH">
+        </div>
+        <!-- Gambar Sponsor 6: KAPAL API (Large) -->
+        <div class="sponsor-logo large">
+          <img src="images/Sponsorship/4.png" alt="Sponsor KAPAL API">
+        </div>
+        <!-- Gambar Sponsor 3: BUYNANA (Medium) -->
+        <div class="sponsor-logo medium">
+          <img src="images/Sponsorship/7.png" alt="Sponsor BUYNANA">
+        </div>
+        <!-- Gambar Sponsor 4: SARI ROTI (Medium) -->
+        <div class="sponsor-logo medium">
+          <img src="images/Sponsorship/8.png" alt="Sponsor SARI ROTI">
+        </div>
+        <!-- Gambar Sponsor 5: AIR GUNUNG (Medium) -->
+        <div class="sponsor-logo medium">
+          <img src="images/Sponsorship/6.png" alt="Sponsor AIR GUNUNG">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--======= Media Partner Section =======-->
+  <section class="media-partner section" id="media-partner">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Media Partner</h1>
+      <h2 class="section-title-02">Media Partners</h2>
+      <div class="media-partner-images">
+        <!-- Gambar Media Partner 1 -->
+        <div class="partner-logo">
+          <img src="images/Media Partner/CFC.PNG" alt="Media Partner 1">
+        </div>
+        <!-- Gambar Media Partner 2 -->
+        <div class="partner-logo">
+          <img src="images/Media Partner/DG.png" alt="Media Partner 2">
+        </div>
+        <!-- Gambar Media Partner 3 -->
+        <div class="partner-logo hima-logo">
+          <img src="images/Media Partner/HIMA PNG.png" alt="Media Partner 3">
+        </div>
+        <!-- Gambar Media Partner 4 -->
+        <div class="partner-logo">
+          <img src="images/Media Partner/IMG_2795.PNG" alt="Media Partner 4">
+        </div>
+        <!-- Gambar Media Partner 5 -->
+        <div class="partner-logo">
+          <img src="images/Media Partner/Logo BEM.png" alt="Media Partner 5">
+        </div>
+        <!-- Gambar Media Partner 6 -->
+        <div class="partner-logo hima-logo">
+          <img src="images/Media Partner/Rebranding Suara Utama-01-01.png" alt="Media Partner 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--=======Footer=======-->
+  <footer>
+    <div class="footer-container">
+      <div class="about group">
+        <h2>Meraya</h2>
+        <p>Pop Up Market</p>
+        <a href="#home">Home</a>
+      </div>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#guest">Guest</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="follow group">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://www.tiktok.com/@merayamarket" target="_blank" rel="noopener"
+              aria-label="Visit Meraya Market on TikTok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://www.instagram.com/merayamarket" target="_blank" rel="noopener"
+              aria-label="Visit Meraya Market on Instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright group">
+      <p>&copy; 2024 by Meraya Karsa Aksa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!--=======External scripts=======-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+
 </html>
