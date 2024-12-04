@@ -1321,73 +1321,70 @@ footer a {
 }
 
 .sponsorship-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+  /* Posisi logo di tengah */
+  align-items: center;
+  /* Rata vertikal */
+  flex-wrap: wrap;
+  /* Membungkus elemen jika ruang tidak cukup */
+  gap: 15px;
+  /* Jarak antar elemen */
   margin-top: 20px;
 }
 
-.sponsor-logo.large img {
+.sponsor-logo img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.sponsor-logo.large img {
   width: 200px;
+  /* Ukuran default */
 }
 
 .sponsor-logo.medium img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
   width: 100px;
+  /* Ukuran default */
 }
 
 /* Responsif */
-@media screen and (max-width: 1024px) {
-  .sponsorship-images {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .sponsor-logo.large img {
-    width: 180px;
-  }
-
-  .sponsor-logo.medium img {
-    width: 90px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .sponsorship-images {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    justify-content: space-evenly;
+    /* Spasi merata antar elemen */
+    flex-wrap: wrap;
+    /* Tetap membungkus */
   }
 
   .sponsor-logo.large img {
     width: 150px;
+    /* Ukuran lebih kecil */
   }
 
   .sponsor-logo.medium img {
     width: 75px;
+    /* Ukuran lebih kecil */
   }
 }
 
 @media screen and (max-width: 480px) {
   .sponsorship-images {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    justify-content: space-between;
+    /* Spasi antar elemen lebih kecil */
   }
 
   .sponsor-logo.large img {
     width: 120px;
+    /* Ukuran lebih kecil */
   }
 
   .sponsor-logo.medium img {
     width: 60px;
+    /* Ukuran lebih kecil */
   }
 }
 
@@ -1468,6 +1465,89 @@ footer a {
   .hima-logo img {
     width: 120px;
     /* Ukuran logo HIMA untuk ponsel */
+  }
+}
+
+/* Support By Section */
+.support-by {
+  text-align: center;
+}
+
+.support-by .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-by-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Logo berada di tengah */
+  align-items: center;
+  /* Rata vertikal */
+  flex-wrap: wrap;
+  /* Membungkus jika ruang tidak cukup */
+  gap: 30px;
+  /* Jarak antar elemen */
+  margin-top: 20px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  /* Opsional: Membuat sudut logo melengkung */
+}
+
+.partner-logo img {
+  width: 300px;
+  /* Ukuran default */
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.hima-logo img {
+  width: 180px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* Responsif */
+@media screen and (max-width: 1024px) {
+  .support-by-wrapper {
+    justify-content: space-around;
+    /* Spasi antar elemen merata */
+    gap: 20px;
+  }
+
+  .partner-logo img {
+    width: 180px;
+    /* Ukuran lebih kecil */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .support-by-wrapper {
+    justify-content: center;
+    /* Tetap kiri-kanan */
+    gap: 15px;
+  }
+
+  .partner-logo img {
+    width: 150px;
+    /* Ukuran lebih kecil */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .support-by-wrapper {
+    justify-content: space-between;
+    /* Tetap kiri-kanan dengan spasi antar elemen */
+  }
+
+  .partner-logo img {
+    width: 120px;
+    /* Ukuran lebih kecil */
   }
 }
 
